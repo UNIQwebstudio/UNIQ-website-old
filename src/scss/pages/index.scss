@@ -1,9 +1,8 @@
-body {
-  background: #222338;
-}
+@import 'colors';
+@import 'preloader';
 
-.logo {
-  width: 500px;
-  height: 500px;
-  background: url('../../assets/images/logo.png');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $primaryColor;
 }
