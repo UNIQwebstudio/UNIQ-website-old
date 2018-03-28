@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+#svg257{
+    height: 200px;
+}
+.header {
+    max-width: 200px;
+    background-color: $primaryColor;
+    height: 100vh;
+}
+.header__link{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    color: $focusColor;
+    transition: .2s;
+}

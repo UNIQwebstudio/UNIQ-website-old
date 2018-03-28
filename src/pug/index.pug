@@ -9,3 +9,28 @@ html(lang='en')
     div(class="preloader")
       div(class="preloader-logo")
         include ../assets/images/logoAnimated.svg
+    header.header
+      a.header__logo(href='#')
+        include ../assets/images/logo.svg
+      nav.header__navigation
+        ul.header__menu
+          li.header__item
+            a.header__link(href='#')
+              span(data-hover="Works")
+                | Works
+          li.header__item
+            a.header__link(href='#')
+              span(data-hover="About Us")
+                | About Us
+          li.header__item
+            a.header__link(href='#')
+              span(data-hover="Pricing")
+                | Pricing
+          li.header__item
+            a.header__link(href='#')
+              span(data-hover="Partners")
+                | Partners
+          li.header__item
+            a.header__link(href='#')
+              span(data-hover="Contacts")
+                | Contacts

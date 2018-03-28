@@ -1,0 +1,49 @@
+@media only screen and (min-width:768px) {
+    .header {
+        max-width: 320px;
+    }
+    .header__item{
+        margin-top: 30px;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    .header__link {
+        padding: 25px 0;
+        position: relative;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+        color: $focusColor;
+        background-color: $primaryColor;
+        overflow: hidden;
+        height: 20px;
+        span{
+            padding-bottom: 22px;
+            position: relative;
+            display: inline-block;
+            -webkit-transition: -webkit-transform 0.3s;
+            -moz-transition: -moz-transform 0.3s;
+            transition: transform 0.3s;
+            &:before{
+                position: absolute;
+                top: 100%;
+                content: attr(data-hover);
+                color: $yellowAccent;
+                -webkit-transform: translate3d(0,0,0);
+                -moz-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+        }
+        &:hover span{
+            -webkit-transform: translateY(-100%);
+            -moz-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+    }
+    #svg257{
+        height: 300px;
+    }
+}

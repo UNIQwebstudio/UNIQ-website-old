@@ -1,8 +1,12 @@
 @import 'colors';
 @import 'preloader';
+@import 'fonts';
+@import 'reset';
+@import 'fonts';
+@import 'headerMobile320';
+@import 'headerTablet768';
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro:400|Josefin+Sans:700');
 
 body {
-  margin: 0;
-  padding: 0;
   background-color: $primaryColor;
 }
