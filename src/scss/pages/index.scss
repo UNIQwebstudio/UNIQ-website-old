@@ -2,11 +2,34 @@
 @import 'preloader';
 @import 'fonts';
 @import 'reset';
-@import 'fonts';
-@import 'headerMobile320';
-@import 'headerTablet768';
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro:400|Josefin+Sans:700');
+@import 'variables';
+@import 'side';
 
 body {
+  position: relative;
+  height: 100vh;
   background-color: $primaryColor;
+  background-image: url('../../assets/images/bg.jpg');
+  background-size: cover;
+}
+
+.home{
+  bottom: 5%;
+  left: 2%;
+  position: absolute;
+  color: #fff;
+  font-family: 'MyriadPro-Bold';
+  text-transform: uppercase;
+
+  h1{
+    font-size: 72px;
+    letter-spacing: 5px;
+    margin-bottom: 46px;
+  }
+
+  h2{
+    font-family: 'MyriadPro-Reg';
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
 }

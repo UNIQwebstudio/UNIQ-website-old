@@ -27,6 +27,10 @@ export default {
         use: 'url-loader'
       },
       {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: 'file-loader'
+      },
+      {
         test: /.pug$/,
         use: {
           loader: 'pug-loader',
