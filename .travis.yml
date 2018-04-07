@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "7"
+  
+script:
+  - npm run build
+  
+deploy:
+  provider: surge
+  project: ./static/
+  domain: example.surge.sh  
