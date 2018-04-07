@@ -20,11 +20,24 @@ export default {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('autoprefixer')(),
+              ]
+            }
+          },
+          'sass-loader'
+        ]
       },
       {
         test: /\.(gif|png|jpe?g)$/,
-        use: 'url-loader'
+        use: 'file-loader'
       },
       {
         test: /\.(ttf|eot|woff|woff2)$/,

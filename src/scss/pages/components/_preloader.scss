@@ -1,0 +1,38 @@
+@keyframes preloaderComplete {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.preloader {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $bgColorPreloader;
+  animation: preloaderComplete .3s linear 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.preloader-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -2px;
+    left: -11px;
+  }
+}

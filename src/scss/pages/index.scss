@@ -1,9 +1,8 @@
-@import 'colors';
-@import 'preloader';
-@import 'fonts';
-@import 'reset';
+@import '~reset-css/reset.css';
 @import 'variables';
-@import 'side';
+@import 'fonts';
+@import './components/preloader';
+@import './components/side';
 
 body {
   position: relative;
@@ -13,7 +12,7 @@ body {
   background-size: cover;
 }
 
-.home{
+.home {
   bottom: 5%;
   left: 2%;
   position: absolute;
@@ -21,13 +20,13 @@ body {
   font-family: 'MyriadPro-Bold';
   text-transform: uppercase;
 
-  h1{
+  h1 {
     font-size: 72px;
     letter-spacing: 5px;
     margin-bottom: 46px;
   }
 
-  h2{
+  h2 {
     font-family: 'MyriadPro-Reg';
     font-size: 40px;
     letter-spacing: 3px;
