@@ -8,4 +8,5 @@ script:
 deploy:
   provider: surge
   project: ./public/
-  domain: uniq-website-test.surge.sh  
+  domain: uniq-website-test.surge.sh 
+  skip_cleanup: true
