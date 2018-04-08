@@ -23,15 +23,6 @@ export default {
         use: [
           'style-loader',
           'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              plugins: [
-                require('autoprefixer')(),
-              ]
-            }
-          },
           'sass-loader'
         ]
       },
