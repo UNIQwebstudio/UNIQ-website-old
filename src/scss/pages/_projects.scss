@@ -1,0 +1,122 @@
+.projects-wrap {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh!important;
+  // width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #222338;
+  justify-content: center;
+  align-items: center;
+
+  .row-1 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .project {
+      transition: .4s;
+      margin: 20px;
+      background-color: #C25656;
+
+      &:hover {
+        -webkit-box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
+        box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
+      }
+    }
+
+    .p1 {
+      width: 35%;
+      height: 35vh;
+      transition-timing-function: ease-in-out;
+      transition-duration: 1.2s;
+      transform: translateX(-1000%);
+    }
+
+    .p2 {
+      position: relative;
+      width: 20%;
+      height: 25vh;
+      transition-timing-function: ease-in-out;
+      transition-duration: 1.2s;
+      transform: translateY(-1000%);
+
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(255,255,255,.1);
+        width: 100%;
+        height: 50px;
+        top: -8vh;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(255,255,255,.1);
+        width: 50px;
+        height: 100%;
+        right: -8vh;
+      }
+    }
+  }
+
+  .row-2 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .project {
+      transition: .4s;
+      margin: 20px;
+      background-color: #C25656;
+
+      &:hover {
+        -webkit-box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
+        box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
+      }
+    }
+
+    .p3 {
+      position: relative;
+      width: 15%;
+      height: 30vh;
+      transition-timing-function: ease-in-out;
+      transition-duration: 1.2s;
+      transform: translateX(-1000%);
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(255,255,255,.1);
+        bottom: -8vh;
+        left: 0;
+      }
+    }
+
+    .p4 {
+      width: 30%;
+      height: 45vh;
+      transition-timing-function: ease-in-out;
+      transition-duration: 1.2s;
+      transform: translateY(-1000%);
+    }
+
+    .p5 {
+      width: 15%;
+      height: 40vh;
+      transition-timing-function: ease-in-out;
+      transition-duration: 1.2s;
+      transform: translateX(1000%);
+    }
+  }
+}

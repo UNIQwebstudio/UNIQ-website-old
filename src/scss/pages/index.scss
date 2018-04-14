@@ -1,15 +1,18 @@
 @import '~reset-css/reset.css';
 @import 'variables';
 @import 'fonts';
+@import 'media';
+@import 'projects';
 @import './components/preloader';
 @import './components/side';
 
-body {
+.home-wrap {
   position: relative;
   height: 100vh;
   background-color: $primaryColor;
   background-image: url('../../assets/images/background.png');
   background-size: cover;
+  background-attachment: fixed;
 
   .home {
     bottom: 5%;
@@ -21,14 +24,14 @@ body {
 
     h1 {
       font-size: 72px;
-      letter-spacing: 5px;
-      margin-bottom: 46px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
     }
 
     h2 {
       font-family: 'MyriadPro-Reg';
       font-size: 40px;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
     }
   }
 }
