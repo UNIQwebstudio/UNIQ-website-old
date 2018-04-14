@@ -32,8 +32,8 @@
       cursor: pointer;
       position: relative;
       display: block;
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       transform: rotate(45deg);
       border: 2px solid #fff;
       background-color: $primaryColor;
@@ -42,8 +42,8 @@
         transition: .3s ease-in-out;
         position: absolute;
         content: '';
-        top: 27.5%;
-        left: 27.5%;
+        top: 0.6vh;
+        left: 0.6vh;
         transform: scale(0);
       }
 

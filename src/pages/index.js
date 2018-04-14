@@ -3,7 +3,11 @@ import '../scss/pages/index.scss';
 var done = false;
 var homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
 
-setInterval(function(){
+var pointers = document.getElementsByClassName('point');
+
+window.scrollTop = 1330;
+
+window.onscroll = function() {
   if(window.pageYOffset >= (homeHeight - 500) && !done){
     console.log("true");
     document.getElementsByClassName('p1')[0].style.transform = "translateX(0%)";
@@ -13,4 +17,4 @@ setInterval(function(){
     document.getElementsByClassName('p5')[0].style.transform = "translateX(0%)";
     done = true;
   }
-}, 500)
+}
