@@ -1,4 +1,16 @@
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
+  .home {
+    h1 {
+      font-size: 50px!important;
+      margin-bottom: 9px!important;
+    }
+
+    h2 {
+      font-size: 20px!important;
+      letter-spacing: 0!important;
+    }
+  }
+
   .side {
     display: none!important;
   }
