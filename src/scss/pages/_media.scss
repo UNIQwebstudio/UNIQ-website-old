@@ -1,5 +1,49 @@
-@media (max-width: 768px){
-  .side{
+@media (max-width: 768px) {
+  .side {
     display: none!important;
+  }
+
+  .projects-wrap {
+    height: auto!important;
+
+    .row-1 {
+      flex-wrap: wrap;
+
+      .p1 {
+        width: 100%!important;
+      }
+
+      .p2 {
+        width: 100%!important;
+
+        &::after {
+          display: none;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .row-2 {
+      flex-wrap: wrap;
+
+      .p3 {
+        width: 100% !important;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .p4 {
+        width: 100% !important;
+      }
+
+      .p5 {
+        width: 100% !important;
+      }
+    }
   }
 }

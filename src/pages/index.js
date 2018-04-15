@@ -5,8 +5,6 @@ var homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
 
 var pointers = document.getElementsByClassName('point');
 
-window.scrollTop = 1330;
-
 window.onscroll = function() {
   if(window.pageYOffset >= (homeHeight - 500) && !done){
     console.log("true");
@@ -18,3 +16,8 @@ window.onscroll = function() {
     done = true;
   }
 }
+
+setTimeout(function(){
+  window.scrollTop = 4330;
+  console.log("done scroll");
+}, 1000);
