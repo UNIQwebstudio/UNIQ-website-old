@@ -1,0 +1,30 @@
+.home-wrap {
+  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  background-color: $primaryColor;
+  background-image: url('../../assets/images/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+
+  .home {
+    bottom: 5%;
+    left: 2%;
+    position: absolute;
+    color: #fff;
+    font-family: 'MyriadPro-Bold';
+    text-transform: uppercase;
+
+    h1 {
+      font-size: 72px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-family: 'MyriadPro-Reg';
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+  }
+}

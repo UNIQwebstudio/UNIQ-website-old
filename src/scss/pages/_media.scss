@@ -1,33 +1,33 @@
 @media (max-width: $desktopmin) {
   .home {
     h1 {
-      font-size: 50px!important;
-      margin-bottom: 9px!important;
+      font-size: 65px!important;
+      margin-bottom: 9px;
     }
 
     h2 {
-      font-size: 20px!important;
-      letter-spacing: 0!important;
+      font-size: 26px!important;
+      letter-spacing: 0;
     }
   }
 
   .side {
-    display: none!important;
+    display: none;
   }
 
   .projects-wrap {
-    height: auto!important;
+    height: auto;
 
     .row-1 {
       flex-wrap: wrap;
 
       .p1 {
-        width: 100%!important;
+        width: 100%;
         transform: translateX(500%);
       }
 
       .p2 {
-        width: 100%!important;
+        width: 100%;
         transform: translateX(500%);
 
         &::after {
@@ -44,7 +44,7 @@
       flex-wrap: wrap;
 
       .p3 {
-        width: 100% !important;
+        width: 100% ;
         transform: translateX(500%);
 
         &::after {
@@ -53,12 +53,12 @@
       }
 
       .p4 {
-        width: 100% !important;
+        width: 100% ;
         transform: translateX(500%);
       }
 
       .p5 {
-        width: 100% !important;
+        width: 100% ;
         transform: translateX(500%);
       }
     }
