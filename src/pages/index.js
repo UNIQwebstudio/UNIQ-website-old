@@ -1,23 +1,26 @@
 import '../scss/pages/index.scss';
 
-var done = false;
-var homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
+const deviceWidth = screen.width;
+const homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
+const projects = document.getElementsByClassName('project');
+const pointers = document.getElementsByClassName('point');
 
-var pointers = document.getElementsByClassName('point');
-
-window.onscroll = function() {
-  if(window.pageYOffset >= (homeHeight - 500) && !done){
-    console.log("true");
-    document.getElementsByClassName('p1')[0].style.transform = "translateX(0%)";
-    document.getElementsByClassName('p2')[0].style.transform = "translateY(0%)";
-    document.getElementsByClassName('p3')[0].style.transform = "translateX(0%)";
-    document.getElementsByClassName('p4')[0].style.transform = "translateY(0%)";
-    document.getElementsByClassName('p5')[0].style.transform = "translateX(0%)";
-    done = true;
+if(deviceWidth <= 768) {
+  for(let i = 1; i <= projects.length; i++){
+    document.querySelector('.p'+i).style.transform = "translateX(500%)";
   }
 }
 
-setTimeout(function(){
-  window.scrollTop = 4330;
-  console.log("done scroll");
-}, 1000);
+window.onscroll = function() {
+  if(window.pageYOffset >= (homeHeight - 300)){
+    for(let i = 1; i <= projects.length; i++){
+      document.querySelector('.p'+i).style.transform = "translateX(0%)";
+    }
+  }
+}
+
+for(let i = 0; i < pointers.length; i++){
+  pointers[i].addEventListener("click", function() {
+    window.scrollTo(0, homeHeight * i);
+  })
+}

@@ -66,6 +66,7 @@
       height: 35vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1.2s;
+      transition-delay: 0;
       transform: translateX(-1000%);
       background-image: url(../../assets/images/p1.jpg);
       background-position: center center;
@@ -78,6 +79,7 @@
       height: 25vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1.2s;
+      transition-delay: 0.1s;
       transform: translateY(-1000%);
       background-image: url(../../assets/images/p2.jpg);
       background-position: center center;
@@ -161,6 +163,7 @@
       height: 30vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1.2s;
+      transition-delay: 0.2s;
       transform: translateX(-1000%);
       background-image: url(../../assets/images/p3.jpg);
       background-position: center center;
@@ -182,6 +185,7 @@
       height: 45vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1.2s;
+      transition-delay: 0.3s;
       transform: translateY(-1000%);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
@@ -193,6 +197,7 @@
       height: 40vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1.2s;
+      transition-delay: 0.4s;
       transform: translateX(1000%);
       background-image: url(../../assets/images/p5.jpg);
       background-position: center center;
