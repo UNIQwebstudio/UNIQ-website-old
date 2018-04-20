@@ -8,5 +8,5 @@
 
 - [Travis CI](https://travis-ci.org/UNIQwebstudio/UNIQ-website)
 
-## Design
+### Design
 
