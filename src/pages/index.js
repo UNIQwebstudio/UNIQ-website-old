@@ -45,22 +45,66 @@ pointers[2].style.top = "40%";
 pointers[3].style.top = "60%";
 pointers[4].style.top = "80%";
 
-$(document).ready(function () {
-  //let  mainPageX = $("#dot_1").offset();
-    $(".side-inner-mobile").click(function (event) {
-        if (event.target.tagName != "A") {
-          return;
-        }
-        let dot = $("#active-dot");
-        let mainDot = dot.offset();
-        let mainDotLeftCoods = mainDot.top;
-        let target = $(event.target);
-        let dotTarget = target.offset();
-        let dotTargetLeftCoods = dotTarget.top;
+// $(document).ready(function () {
+//   //let  mainPageX = $("#dot_1").offset();
+//     $(".side-inner-mobile").click(function (event) {
+//         if (event.target.tagName != "A") {
+//           return;
+//         }
+//         let dot = $("#active-dot");
+//         let mainDot = dot.offset();
+//         let mainDotLeftCoods = mainDot.top;
+//         let target = $(event.target);
+//         let dotTarget = target.offset();
+//         let dotTargetLeftCoods = dotTarget.top;
+//
+//         dot.offset({ top: dotTargetLeftCoods });
+//         target.offset({ top: mainDotLeftCoods });
+//         // console.log(dotTargetLeftCoods);
+//         // console.log(mainDotLeftCoods);
+//     })
+// });
 
-        dot.offset({ top: dotTargetLeftCoods });
-        target.offset({ top: mainDotLeftCoods });
-        // console.log(dotTargetLeftCoods);
-        // console.log(mainDotLeftCoods);
-    })
-});
+window.$ = document.querySelector.bind(document);
+window.$$ = document.querySelectorAll.bind(document);
+
+let _animationActive = false;
+
+function pointEventListener(point) {
+  return point.addEventListener('click', () => {
+    const activePoint = $('.side-inner-mobile__dot-mobile--active');
+
+    if (_animationActive || point === activePoint) return;
+
+    _animationActive = true;
+
+    const offset = point.getBoundingClientRect().top - activePoint.getBoundingClientRect().top;
+
+    activePoint.style.transform = `translateY(${offset}px) scale(1.2)`;
+    point.style.transform = `translateY(${-offset}px)`;
+
+    activePoint.addEventListener('transitionend', () => {
+      activePoint.style.transform = '';
+      point.style.transform = '';
+
+      const _point = point.cloneNode();
+      const _activePoint = activePoint.cloneNode();
+
+      pointEventListener(_point);
+      pointEventListener(_activePoint);
+
+      activePoint.replaceWith(_point);
+      point.replaceWith(_activePoint);
+
+      for (let i = 0, points = $$('.side-inner-mobile__dot-mobile'); i < points.length; i++) {
+        points[i].dataset.screen = i + 1;
+      }
+
+      _animationActive = false;
+    });
+  });
+}
+
+for (const point of $$('.side-inner-mobile__dot-mobile')) {
+  pointEventListener(point);
+}
