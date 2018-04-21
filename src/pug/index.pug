@@ -12,8 +12,11 @@ html(lang='en')
         include ../assets/images/logoAnimated.svg
     nav.side
       div.side-inner
+        div.section-detail
+          h3 Section description
+        span.dott
         span.line
-        a.point.active
+        a.point
           span.dot
         a.point
           span.dot
@@ -26,6 +29,12 @@ html(lang='en')
       div.languages
         a RU
         a EN
+    nav.side-inner-mobile#mobile-nav
+      a.side-inner-mobile__dot-mobile.side-inner-mobile__dot-mobile--active#active-dot
+      a.side-inner-mobile__dot-mobile
+      a.side-inner-mobile__dot-mobile
+      a.side-inner-mobile__dot-mobile
+      a.side-inner-mobile__dot-mobile
     div.home-wrap
       div.home
         h1 Uniq
@@ -51,3 +60,4 @@ html(lang='en')
         div.project.p5
           div.content
             div.content-text
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')

@@ -1,4 +1,4 @@
-@media (max-width: $desktopmin) {
+@media (max-width: $desktopmax) {
   .home {
     h1 {
       font-size: 65px!important;
@@ -62,5 +62,11 @@
         transform: translateX(500%);
       }
     }
+  }
+}
+
+@media (min-width: $desktopmin) {
+  .side-inner-mobile {
+    display: none;
   }
 }
