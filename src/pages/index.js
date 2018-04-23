@@ -29,7 +29,7 @@ window.onscroll = function() {
   else {
     document.querySelector('.section-detail').style.top = "-2%";
     document.querySelector('.section-detail h3').innerHTML = "Projects";
-    document.querySelector('.dott').style.top = "24.3%";
+    document.querySelector('.dott').style.top = "26%";
   }
 }
 
@@ -40,10 +40,10 @@ for(let i = 0; i < pointers.length; i++) {
 }
 
 pointers[0].style.top = "0%";
-pointers[1].style.top = "20%";
-pointers[2].style.top = "40%";
-pointers[3].style.top = "60%";
-pointers[4].style.top = "80%";
+pointers[1].style.top = "25%";
+pointers[2].style.top = "50%";
+pointers[3].style.top = "75%";
+pointers[4].style.top = "100%";
 
 $(document).ready(function () {
   //let  mainPageX = $("#dot_1").offset();
