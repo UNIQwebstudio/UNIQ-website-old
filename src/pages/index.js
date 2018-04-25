@@ -45,14 +45,14 @@ window.onscroll = function() {
   //================== Active slide pointer animtion ==========================
 
   if(window.pageYOffset < homeHeight-200) {
-    document.querySelector('.section-detail').style.top = "-123px";
+    document.querySelector('.section-detail').style.transform = "translateY(0px) rotate(-45deg)";
     document.querySelector('.section-detail h3').innerHTML = "Home";
-    document.querySelector('.dott').style.top = "27px";
+    document.querySelector('.dott').style.transform = "translateY(0px) rotate(-45deg)";
   }
   else {
-    document.querySelector('.section-detail').style.top = "-30px";
+    document.querySelector('.section-detail').style.transform = "translateY(90px) rotate(-45deg)";
     document.querySelector('.section-detail h3').innerHTML = "Projects";
-    document.querySelector('.dott').style.top = "111px";
+    document.querySelector('.dott').style.transform = "translateY(84px) rotate(-45deg)";
   }
 }
 

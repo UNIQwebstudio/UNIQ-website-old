@@ -29,10 +29,11 @@
       height: 10px;
       z-index: 22;
       background-color: #fff;
-      transition-delay: .4s;
+      transition-delay: .2s;
       transition-duration: .7s;
       transition-timing-function: ease-in-out;
-      transform: rotate(-45deg);
+      transform: translateY(0px) rotate(-45deg);
+      will-change: transform;
     }
 
     .section-detail {
@@ -41,12 +42,13 @@
       top: -123px;
       width: 300px;
       height: 300px;
-      transform: rotate(-45deg);
+      transform: translateY(0px) rotate(-45deg);
       color: #fff;
       font-family: 'MyriadPro-Reg';
       background-color: $primaryColor;
       transition-duration: .7s;
       transition-timing-function: ease-in-out;
+      will-change: transform;
 
       h3 {
         position: absolute;
