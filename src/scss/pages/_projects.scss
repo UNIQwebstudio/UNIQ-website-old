@@ -65,12 +65,17 @@
       width: 35%;
       height: 35vh;
       transition-timing-function: ease-in-out;
-      transition-duration: 1.2s;
+      transition-duration: 1s;
       transition-delay: 0;
       transform: translateX(-1000%);
       background-image: url(../../assets/images/p1.jpg);
       background-position: center center;
       background-size: cover;
+
+      &:hover {
+        width: 38%;
+        height: 38vh;
+      }
     }
 
     .p2 {
@@ -78,7 +83,7 @@
       width: 20%;
       height: 25vh;
       transition-timing-function: ease-in-out;
-      transition-duration: 1.2s;
+      transition-duration: 1s;
       transition-delay: 0.1s;
       transform: translateY(-1000%);
       background-image: url(../../assets/images/p2.jpg);
@@ -89,9 +94,14 @@
         content: '';
         position: absolute;
         background-color: rgba(255,255,255,.1);
-        width: 100%;
+        width: 80%;
         height: 50px;
         top: -8vh;
+      }
+
+      &:hover {
+        width: 24%;
+        height: 27vh;
       }
     }
   }
@@ -153,7 +163,7 @@
       width: 15%;
       height: 30vh;
       transition-timing-function: ease-in-out;
-      transition-duration: 1.2s;
+      transition-duration: 1s;
       transition-delay: 0.2s;
       transform: translateX(-1000%);
       background-image: url(../../assets/images/p3.jpg);
@@ -163,11 +173,16 @@
       &::after {
         content: '';
         position: absolute;
-        width: 100%;
+        width: 70%;
         height: 50px;
         background-color: rgba(255,255,255,.1);
         bottom: -8vh;
-        left: 0;
+        right: 0;
+      }
+
+      &:hover {
+        width: 18%;
+        height: 33vh;
       }
     }
 
@@ -175,24 +190,34 @@
       width: 30%;
       height: 45vh;
       transition-timing-function: ease-in-out;
-      transition-duration: 1.2s;
+      transition-duration: 1s;
       transition-delay: 0.3s;
       transform: translateY(1000%);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
       background-size: cover;
+
+      &:hover {
+        width: 33%;
+        height: 48vh;
+      }
     }
 
     .p5 {
       width: 15%;
       height: 40vh;
       transition-timing-function: ease-in-out;
-      transition-duration: 1.2s;
+      transition-duration: 1s;
       transition-delay: 0.4s;
       transform: translateX(1000%);
       background-image: url(../../assets/images/p5.jpg);
       background-position: center center;
       background-size: cover;
+
+      &:hover {
+        width: 18%;
+        height: 43vh;
+      }
     }
   }
 }

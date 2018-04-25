@@ -1,4 +1,4 @@
-@media (max-width: $desktopmax) {
+@media screen and (max-width: $desktopmax) {
   .home {
     h1 {
       font-size: 65px!important;

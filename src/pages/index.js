@@ -4,9 +4,27 @@ const deviceWidth = screen.width;
 const homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
 const projects = document.getElementsByClassName('project');
 const pointers = document.getElementsByClassName('point');
-document.querySelector('.section-detail').style.top = "-27%";
+document.querySelector('.section-detail').style.top = "-123px";
 document.querySelector('.section-detail h3').innerHTML = "Home";
-document.querySelector('.dott').style.top = "0.8%";
+
+/*
+============================ Sidebar/mobile sidebar =============================
+*/
+
+window.onresize = function() {
+  if(screen.height < 650 || screen.width < 768) {
+    const side = document.querySelector('.side');
+    side.style.display = "none";
+    const mobileSide = document.querySelector('.side-inner-mobile');
+    mobileSide.style.display = "flex";
+  }
+  else {
+    const side = document.querySelector('.side');
+    side.style.display = "flex";
+    const mobileSide = document.querySelector('.side-inner-mobile');
+    mobileSide.style.display = "none";
+  }
+}
 
 if(deviceWidth <= 768) {
   for(let i = 1; i <= projects.length; i++){
@@ -15,23 +33,30 @@ if(deviceWidth <= 768) {
 }
 
 window.onscroll = function() {
+
+  //================== Projects block animation =============================
+
   if(window.pageYOffset >= (homeHeight - 300)){
     for(let i = 1; i <= projects.length; i++){
       document.querySelector('.p'+i).style.transform = "translateX(0%)";
     }
   }
 
+  //================== Active slide pointer animtion ==========================
+
   if(window.pageYOffset < homeHeight-200) {
-    document.querySelector('.section-detail').style.top = "-27%";
+    document.querySelector('.section-detail').style.top = "-123px";
     document.querySelector('.section-detail h3').innerHTML = "Home";
-    document.querySelector('.dott').style.top = "0.8%";
+    document.querySelector('.dott').style.top = "27px";
   }
   else {
-    document.querySelector('.section-detail').style.top = "-2%";
+    document.querySelector('.section-detail').style.top = "-30px";
     document.querySelector('.section-detail h3').innerHTML = "Projects";
-    document.querySelector('.dott').style.top = "26%";
+    document.querySelector('.dott').style.top = "111px";
   }
 }
+
+//======================== Desktop sidebar event listener ========================
 
 for(let i = 0; i < pointers.length; i++) {
   pointers[i].addEventListener("click", function() {
@@ -39,31 +64,10 @@ for(let i = 0; i < pointers.length; i++) {
   })
 }
 
-pointers[0].style.top = "0%";
-pointers[1].style.top = "25%";
-pointers[2].style.top = "50%";
-pointers[3].style.top = "75%";
-pointers[4].style.top = "100%";
+/*
+================================= Mobile sidebar ========================================
+*/
 
-// $(document).ready(function () {
-//   //let  mainPageX = $("#dot_1").offset();
-//     $(".side-inner-mobile").click(function (event) {
-//         if (event.target.tagName != "A") {
-//           return;
-//         }
-//         let dot = $("#active-dot");
-//         let mainDot = dot.offset();
-//         let mainDotLeftCoods = mainDot.top;
-//         let target = $(event.target);
-//         let dotTarget = target.offset();
-//         let dotTargetLeftCoods = dotTarget.top;
-//
-//         dot.offset({ top: dotTargetLeftCoods });
-//         target.offset({ top: mainDotLeftCoods });
-//         // console.log(dotTargetLeftCoods);
-//         // console.log(mainDotLeftCoods);
-//     })
-// });
 
 window.$ = document.querySelector.bind(document);
 window.$$ = document.querySelectorAll.bind(document);

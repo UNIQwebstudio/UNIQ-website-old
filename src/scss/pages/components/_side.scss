@@ -16,14 +16,29 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60%;
+    height: 400px;
+
+    .dott {
+      display: block;
+      position: absolute;
+      top: 27px;
+      width: 10px;
+      height: 10px;
+      z-index: 22;
+      background-color: #fff;
+      transition-delay: .4s;
+      transition-duration: .7s;
+      transition-timing-function: ease-in-out;
+      transform: rotate(-45deg);
+    }
 
     .section-detail {
-      z-index: 0;
+      z-index: -1;
       position: absolute;
+      top: -123px;
       width: 300px;
       height: 300px;
       transform: rotate(-45deg);
@@ -32,54 +47,55 @@
       background-color: $primaryColor;
       transition-duration: .7s;
       transition-timing-function: ease-in-out;
-      // display: none;
 
       h3 {
         position: absolute;
         transform: rotate(45deg);
-        left: 5vh;
-        top: 7vh;
+        left: 40px;
+        top: 60px;
         font-size: 18px;
         font-family: 'Roboto-Bold';
       }
     }
 
-    .dott {
-      width: 8px;
-      height: 8px;
-      transform: rotate(-45deg);
-      background-color: #fff;
-      position: absolute;
-      // top: 12.2vh;
-      z-index: 5;
-      transition-delay: .4s;
-      transition-duration: .7s;
-      transition-timing-function: ease-in-out;
-    }
-
     .line {
       position: absolute;
       width: 2px;
-      height: 100%;
+      height: 343px;
+      max-height: 343px;
       background-color: $lineColor;
     }
 
-    .point {
-      cursor: pointer;
-      box-sizing: border-box;
-      position: absolute;
+    .point-wrap {
+      margin-top: 33px;
+      margin-bottom: 33px;
+      width: 100%;
+      height: 18px;
       display: flex;
-      // align-items: center;
-      // justify-content: center;
-      width: 18px!important;
-      height: 18px!important;
-      transform: rotate(45deg);
-      border: 2px solid #fff;
-      background-color: $primaryColor;
+      justify-content: center;
+      align-items: center;
+      position: relative;
 
-      &:first-of-type {
-        margin-top: 0;
+      .point {
+        cursor: pointer;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        transform: rotate(45deg);
+        border: 2px solid #fff;
+        background-color: $primaryColor;
       }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    #first {
+      margin-top: 0;
     }
 
   }

@@ -17,18 +17,20 @@
 
     &__dot-mobile {
         display: block;
-        width: 16px;
-        height: 16px;
+        width: 11px;
+        height: 11px;
         border-radius: 50%;
-        background-color: gray;
+        background-color: #ffffff;
         cursor: pointer;
         margin-top: 10px;
         transition: .5s;
+        opacity: 0.2;
 
         &--active {
             z-index: 1;
             background-color: $activeDot;
             transform: scale(1.2);
+            opacity: 1;
         }
     }
 }
