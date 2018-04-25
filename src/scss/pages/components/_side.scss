@@ -107,12 +107,57 @@
     width: 100%;
 
     a {
+      overflow: hidden;
       font-size: 14px;
       line-height: 37px;
       font-family: 'MyriadPro-Bold';
       cursor: pointer;
       display: block;
       color: #fff;
+
+      &:first-of-type {
+        position: relative;
+
+        &:hover {
+          &:after {
+            transform: translateX(0%);
+          }
+        }
+
+        &:after {
+          transition: .3s;
+          top: 5px;
+          left: 0;
+          position: absolute;
+          width: 10%;
+          height: 2px;
+          background-color: #F71033;
+          content: '';
+          transform: translateX(-100%);
+        }
+      }
+
+      &:last-of-type {
+        position: relative;
+
+        &:hover {
+          &:after {
+            transform: translateX(0%);
+          }
+        }
+
+        &:after {
+          transition: .3s;
+          top: 5px;
+          left: 0;
+          position: absolute;
+          width: 10%;
+          height: 2px;
+          background-color: #F71033;
+          content: '';
+          transform: translateX(-100%);
+        }
+      }
     }
   }
 }

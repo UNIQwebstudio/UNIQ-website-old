@@ -24,6 +24,10 @@
       .p1 {
         width: 100%;
         transform: translateX(500%);
+
+        &:hover {
+          width: 100%;
+        }
       }
 
       .p2 {
@@ -36,6 +40,10 @@
 
         &::before {
           display: none;
+        }
+
+        &:hover {
+          width: 100%;
         }
       }
     }
@@ -50,16 +58,28 @@
         &::after {
           display: none;
         }
+
+        &:hover {
+          width: 100%;
+        }
       }
 
       .p4 {
         width: 100% ;
         transform: translateX(500%);
+
+        &:hover {
+          width: 100%;
+        }
       }
 
       .p5 {
         width: 100% ;
         transform: translateX(500%);
+
+        &:hover {
+          width: 100%;
+        }
       }
     }
   }
