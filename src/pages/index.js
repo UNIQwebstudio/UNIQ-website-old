@@ -4,8 +4,18 @@ const deviceWidth = screen.width;
 const homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
 const projects = document.getElementsByClassName('project');
 const pointers = document.getElementsByClassName('point');
-document.querySelector('.section-detail').style.top = "-123px";
-document.querySelector('.section-detail h3').innerHTML = "Home";
+const mobileSide = document.querySelector('.side-inner-mobile');
+const side = document.querySelector('.side');
+const sectionDetail = document.querySelector('.section-detail');
+const sectionInner = document.querySelector('.section-detail h3');
+const currentNavPosition = document.querySelector('.dott');
+
+/*
+============================ Initial params ======================================
+*/
+
+sectionDetail.style.top = "-123px";
+sectionInner.innerHTML = "Home";
 
 /*
 ============================ Sidebar/mobile sidebar =============================
@@ -13,22 +23,20 @@ document.querySelector('.section-detail h3').innerHTML = "Home";
 
 window.onresize = function() {
   if(screen.height < 650 || screen.width < 768) {
-    const side = document.querySelector('.side');
     side.style.display = "none";
-    const mobileSide = document.querySelector('.side-inner-mobile');
     mobileSide.style.display = "flex";
   }
   else {
-    const side = document.querySelector('.side');
     side.style.display = "flex";
-    const mobileSide = document.querySelector('.side-inner-mobile');
     mobileSide.style.display = "none";
   }
 }
 
+//==================== Mobile projects animation direction changed ===============
+
 if(deviceWidth <= 768) {
   for(let i = 1; i <= projects.length; i++){
-    document.querySelector('.p'+i).style.transform = "translateX(500%)";
+    document.querySelector('.p'+i).style.transform = "translateX(100vw)";
   }
 }
 
@@ -38,22 +46,23 @@ window.onscroll = function() {
 
   if(window.pageYOffset >= (homeHeight - 300)){
     for(let i = 1; i <= projects.length; i++){
-      document.querySelector('.p'+i).style.transform = "translateX(0%)";
+      document.querySelector('.p'+i).style.transform = "translateX(0)";
     }
   }
 
   //================== Active slide pointer animtion ==========================
 
   if(window.pageYOffset < homeHeight-200) {
-    document.querySelector('.section-detail').style.transform = "translateY(0px) rotate(-45deg)";
-    document.querySelector('.section-detail h3').innerHTML = "Home";
-    document.querySelector('.dott').style.transform = "translateY(0px) rotate(-45deg)";
+    sectionDetail.style.transform = "translateY(0px) rotate(-45deg)";
+    sectionInner.innerHTML = "Home";
+    currentNavPosition.style.transform = "translateY(0px) rotate(-45deg)";
   }
   else {
-    document.querySelector('.section-detail').style.transform = "translateY(90px) rotate(-45deg)";
-    document.querySelector('.section-detail h3').innerHTML = "Projects";
-    document.querySelector('.dott').style.transform = "translateY(84px) rotate(-45deg)";
+    sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
+    sectionInner.innerHTML = "Projects";
+    currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
   }
+
 }
 
 //======================== Desktop sidebar event listener ========================

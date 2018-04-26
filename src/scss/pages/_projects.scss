@@ -62,12 +62,13 @@
     }
 
     .p1 {
+      will-change: transform;
       width: 35%;
       height: 35vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0;
-      transform: translateX(-1000%);
+      transform: translateX(-100vw);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
       background-size: cover;
@@ -79,13 +80,14 @@
     }
 
     .p2 {
+      will-change: transform;
       position: relative;
       width: 20%;
       height: 25vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.1s;
-      transform: translateY(-1000%);
+      transform: translateY(-100vh);
       background-image: url(../../assets/images/p5.jpg);
       background-position: center center;
       background-size: cover;
@@ -97,6 +99,7 @@
         width: 80%;
         height: 50px;
         top: -8vh;
+        pointer-events: none;
       }
 
       &:hover {
@@ -159,13 +162,14 @@
     }
 
     .p3 {
+      will-change: transform;
       position: relative;
       width: 15%;
       height: 30vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.2s;
-      transform: translateX(-1000%);
+      transform: translateX(-100vw);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
       background-size: cover;
@@ -178,6 +182,7 @@
         background-color: rgba(255,255,255,.1);
         bottom: -8vh;
         right: 0;
+        pointer-events: none;
       }
 
       &:hover {
@@ -187,12 +192,13 @@
     }
 
     .p4 {
+      will-change: transform;
       width: 30%;
       height: 45vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.3s;
-      transform: translateY(1000%);
+      transform: translateY(100vh);
       background-image: url(../../assets/images/p5.jpg);
       background-position: center center;
       background-size: cover;
@@ -204,12 +210,13 @@
     }
 
     .p5 {
+      will-change: transform;
       width: 15%;
       height: 40vh;
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.4s;
-      transform: translateX(1000%);
+      transform: translateX(100vw);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
       background-size: cover;
