@@ -27,4 +27,13 @@
       letter-spacing: 1px;
     }
   }
+
+  .arr-down {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    background-image: url('../../assets/images/down-arrow.png');
+  }
 }
