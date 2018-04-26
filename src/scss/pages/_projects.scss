@@ -68,6 +68,7 @@
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0;
+      transition-property: all;
       transform: translateX(-100vw);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
@@ -87,6 +88,7 @@
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.1s;
+      transition-property: all;
       transform: translateY(-100vh);
       background-image: url(../../assets/images/p5.jpg);
       background-position: center center;
@@ -169,6 +171,7 @@
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.2s;
+      transition-property: all;
       transform: translateX(-100vw);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;
@@ -198,6 +201,7 @@
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.3s;
+      transition-property: all;
       transform: translateY(100vh);
       background-image: url(../../assets/images/p5.jpg);
       background-position: center center;
@@ -216,6 +220,7 @@
       transition-timing-function: ease-in-out;
       transition-duration: 1s;
       transition-delay: 0.4s;
+      transition-property: all;
       transform: translateX(100vw);
       background-image: url(../../assets/images/p4.jpg);
       background-position: center center;

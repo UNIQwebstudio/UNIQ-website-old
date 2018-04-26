@@ -17,6 +17,12 @@ const currentNavPosition = document.querySelector('.dott');
 sectionDetail.style.top = "-123px";
 sectionInner.innerHTML = "Home";
 
+if(window.pageYOffset > homeHeight-200) {
+  sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
+  sectionInner.innerHTML = "Projects";
+  currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
+}
+
 /*
 ============================ Sidebar/mobile sidebar =============================
 */
