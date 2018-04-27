@@ -60,17 +60,17 @@ window.onscroll = function() {
 
   //================== Active slide pointer animtion ==========================
 
-  if(window.pageYOffset < homeHeight) {
+  if(window.pageYOffset < homeHeight-300) {
     sectionDetail.style.transform = "translateY(0px) rotate(-45deg)";
     sectionInner.textContent = "Home";
     currentNavPosition.style.transform = "translateY(0px) rotate(-45deg)";
   }
-  else if(pageYOffset >= homeHeight && pageYOffset < homeHeight*2){
+  else if(pageYOffset >= homeHeight-300 && pageYOffset < (homeHeight-300)*2){
     sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
     sectionInner.textContent = "Projects";
     currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
   }
-  else if(pageYOffset >= homeHeight*2) {
+  else if(pageYOffset >= (homeHeight-300)*2) {
     sectionDetail.style.transform = "translateY(168px) rotate(-45deg)";
     sectionInner.textContent = "About";
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
@@ -96,6 +96,7 @@ pointers[1].addEventListener("click", function() {
 pointers[2].addEventListener("click", function() {
   animatedScroll('.about-wrap');
 })
+
 /*
 ================================= Mobile sidebar ========================================
 */
