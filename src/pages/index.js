@@ -1,5 +1,7 @@
 import '../scss/pages/index.scss';
 
+var scrollToElement = require('scroll-to-element');
+
 const deviceWidth = screen.width;
 const homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
 const projects = document.getElementsByClassName('project');
@@ -17,7 +19,7 @@ const currentNavPosition = document.querySelector('.dott');
 sectionDetail.style.top = "-123px";
 sectionInner.innerHTML = "Home";
 
-if(window.pageYOffset > homeHeight-200) {
+if(window.pageYOffset >= homeHeight-200) {
   sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
   sectionInner.innerHTML = "Projects";
   currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
@@ -58,27 +60,42 @@ window.onscroll = function() {
 
   //================== Active slide pointer animtion ==========================
 
-  if(window.pageYOffset < homeHeight-200) {
+  if(window.pageYOffset < homeHeight) {
     sectionDetail.style.transform = "translateY(0px) rotate(-45deg)";
-    sectionInner.innerHTML = "Home";
+    sectionInner.textContent = "Home";
     currentNavPosition.style.transform = "translateY(0px) rotate(-45deg)";
   }
-  else {
+  else if(pageYOffset >= homeHeight && pageYOffset < homeHeight*2){
     sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
-    sectionInner.innerHTML = "Projects";
+    sectionInner.textContent = "Projects";
     currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
+  }
+  else if(pageYOffset >= homeHeight*2) {
+    sectionDetail.style.transform = "translateY(168px) rotate(-45deg)";
+    sectionInner.textContent = "About";
+    currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
   }
 
 }
 
 //======================== Desktop sidebar event listener ========================
 
-for(let i = 0; i < pointers.length; i++) {
-  pointers[i].addEventListener("click", function() {
-    window.scrollTo(0, homeHeight * i);
-  })
+function animatedScroll(elem) {
+  scrollToElement(elem, {
+    ease: 'in-cube',
+    duration: 1200
+  });
 }
 
+pointers[0].addEventListener("click", function() {
+  animatedScroll('.home-wrap');
+})
+pointers[1].addEventListener("click", function() {
+  animatedScroll('.projects-wrap');
+})
+pointers[2].addEventListener("click", function() {
+  animatedScroll('.about-wrap');
+})
 /*
 ================================= Mobile sidebar ========================================
 */

@@ -17,15 +17,15 @@ html(lang='en')
         div.section-detail
           h3 Section description
         .point-wrap(id = "first")
-          a.point
+          a.point.scroll(href="#home")
         .point-wrap
-          a.point
+          a.point.scroll(href="#projects")
         .point-wrap
-          a.point
+          a.point.scoll(href="#")
         .point-wrap
-          a.point
+          a.point.scroll(href="#")
         .point-wrap
-          a.point
+          a.point.scroll(href="#")
       div.languages
         a RU
         a EN
@@ -35,7 +35,7 @@ html(lang='en')
       a.side-inner-mobile__dot-mobile(data-screen="3")
       a.side-inner-mobile__dot-mobile(data-screen="4")
       a.side-inner-mobile__dot-mobile(data-screen="5")
-    div.home-wrap
+    div.home-wrap(id="home")
       div.home
         h1 Uniq
         h2
@@ -43,7 +43,7 @@ html(lang='en')
           br
           | outsorcing company
       span.arr-down
-    div.projects-wrap
+    div.projects-wrap(id="projects")
       div.row-1
         div.project.p1
           div.content
@@ -61,4 +61,6 @@ html(lang='en')
         div.project.p5
           div.content
             div.content-text
+    div.about-wrap(id="about")
     //- script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+    //- script(src='../pages/scrol.min.js')
