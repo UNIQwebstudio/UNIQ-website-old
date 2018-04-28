@@ -5,7 +5,7 @@
   z-index: 1;
   height: 100%;
   width: 100px;
-  background-color: $primaryColor;
+  background-color: $sideBarColor;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -31,7 +31,7 @@
       background-color: #fff;
       transition-delay: .2s;
       transition-duration: .7s;
-      transition-timing-function: ease-in-out;
+      transition-timing-function: ease;
       transform: translateY(0px) rotate(-45deg);
       will-change: transform;
       cursor: pointer;
@@ -40,23 +40,27 @@
     .section-detail {
       z-index: -1;
       position: absolute;
-      top: -123px;
-      width: 300px;
+      top: -115px;
+      left: -135px;
+      width: 228px;
       height: 300px;
-      transform: translateY(0px) rotate(-45deg);
+      transform: translateY(0px);
       color: #fff;
       font-family: 'MyriadPro-Reg';
-      background-color: $primaryColor;
+      // background-color: $primaryColor;
       transition-duration: .7s;
-      transition-timing-function: ease-in-out;
+      transition-timing-function: ease;
       will-change: transform;
+      background-image: url('../../assets/images/arrow.svg');
+      background-size: 60%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
 
       h3 {
         position: absolute;
-        transform: rotate(45deg);
-        left: 40px;
-        top: 60px;
-        font-size: 18px;
+        left: 60px;
+        top: 138px;
+        font-size: 17px;
         font-family: 'Roboto-Bold';
       }
     }

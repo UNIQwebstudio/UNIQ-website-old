@@ -21,6 +21,7 @@
       transition: .4s;
       margin: 20px;
       background-color: #C25656;
+      border-radius: 10px;
       cursor: pointer;
 
       &:hover {
@@ -38,6 +39,7 @@
         height: 100%;
         width: 100%;
         transition: all .5s;
+        border-radius: 10px;
 
         &:hover {
           background-color: transparent;
@@ -70,9 +72,6 @@
       transition-delay: 0;
       transition-property: all;
       transform: translateX(-100vw);
-      background-image: url(../../assets/images/p4.jpg);
-      background-position: center center;
-      background-size: cover;
 
       &:hover {
         width: 38%;
@@ -90,9 +89,6 @@
       transition-delay: 0.1s;
       transition-property: all;
       transform: translateY(-100vh);
-      background-image: url(../../assets/images/p5.jpg);
-      background-position: center center;
-      background-size: cover;
 
       &::after {
         content: '';
@@ -102,6 +98,7 @@
         height: 50px;
         top: -8vh;
         pointer-events: none;
+        border-radius: 10px;
       }
 
       &:hover {
@@ -124,6 +121,7 @@
       background-color: #C25656;
       position: relative;
       cursor: pointer;
+      border-radius: 10px;
 
       &:hover {
         -webkit-box-shadow: 6px 4px 56px 6px rgba(0,0,0,0.75);
@@ -140,6 +138,7 @@
         height: 100%;
         width: 100%;
         transition: all .5s;
+        border-radius: 10px;
 
         &:hover {
           background-color: transparent;
@@ -173,9 +172,6 @@
       transition-delay: 0.2s;
       transition-property: all;
       transform: translateX(-100vw);
-      background-image: url(../../assets/images/p4.jpg);
-      background-position: center center;
-      background-size: cover;
 
       &::after {
         content: '';
@@ -186,6 +182,7 @@
         bottom: -8vh;
         right: 0;
         pointer-events: none;
+        border-radius: 10px;
       }
 
       &:hover {
@@ -203,9 +200,6 @@
       transition-delay: 0.3s;
       transition-property: all;
       transform: translateY(100vh);
-      background-image: url(../../assets/images/p5.jpg);
-      background-position: center center;
-      background-size: cover;
 
       &:hover {
         width: 33%;
@@ -222,9 +216,6 @@
       transition-delay: 0.4s;
       transition-property: all;
       transform: translateX(100vw);
-      background-image: url(../../assets/images/p4.jpg);
-      background-position: center center;
-      background-size: cover;
 
       &:hover {
         width: 18%;

@@ -16,11 +16,11 @@ const currentNavPosition = document.querySelector('.dott');
 ============================ Initial params ======================================
 */
 
-sectionDetail.style.top = "-123px";
+sectionDetail.style.top = "-115px";
 sectionInner.innerHTML = "Home";
 
 if(window.pageYOffset >= homeHeight-200) {
-  sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
+  sectionDetail.style.transform = "translateY(85px)";
   sectionInner.innerHTML = "Projects";
   currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
 }
@@ -61,17 +61,17 @@ window.onscroll = function() {
   //================== Active slide pointer animtion ==========================
 
   if(window.pageYOffset < homeHeight-300) {
-    sectionDetail.style.transform = "translateY(0px) rotate(-45deg)";
+    sectionDetail.style.transform = "translateY(0px)";
     sectionInner.textContent = "Home";
     currentNavPosition.style.transform = "translateY(0px) rotate(-45deg)";
   }
   else if(pageYOffset >= homeHeight-300 && pageYOffset < (homeHeight-300)*2){
-    sectionDetail.style.transform = "translateY(90px) rotate(-45deg)";
+    sectionDetail.style.transform = "translateY(85px)";
     sectionInner.textContent = "Projects";
     currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
   }
   else if(pageYOffset >= (homeHeight-300)*2) {
-    sectionDetail.style.transform = "translateY(168px) rotate(-45deg)";
+    sectionDetail.style.transform = "translateY(168px)";
     sectionInner.textContent = "About";
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
   }
