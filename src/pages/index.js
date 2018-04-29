@@ -1,6 +1,7 @@
 import '../scss/pages/index.scss';
 
 var scrollToElement = require('scroll-to-element');
+var relaxParallax = require('rellax');
 
 const deviceWidth = screen.width;
 const homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
@@ -96,6 +97,18 @@ pointers[1].addEventListener("click", function() {
 pointers[2].addEventListener("click", function() {
   animatedScroll('.about-wrap');
 })
+
+/*
+================================= Parallax =============================
+*/
+
+var parllax = new relaxParallax('.rellaxTest', {
+  speed: -2,
+  center: false,
+  vertical: true,
+  horizontal: false
+})
+
 
 /*
 ================================= Mobile sidebar ========================================

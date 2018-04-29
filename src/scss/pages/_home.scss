@@ -33,7 +33,7 @@
     height: 32px;
     position: absolute;
     bottom: 2%;
-    left: 50%;
-    background-image: url('../../assets/images/down-arrow.png');
+    left: calc(50% - 16px);
+    background-image: url('../../assets/images/down-arrow.svg');
   }
 }
