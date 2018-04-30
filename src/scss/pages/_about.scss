@@ -4,13 +4,10 @@
 }
 
 .about-wrap {
-    //height: 300vh;
     background-color: #222338;
-    //border: 1px solid red;
     padding: 50px 330px 30px 120px;
 
     &__f-block {
-        //border: 1px solid red;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -184,10 +181,6 @@
 
     &__c-designers {
         flex-basis: 24%;
-        // padding-top: 58px;
-        // padding-bottom: 47px;
-        // padding-left: 65px;
-        // padding-right: 70px;
         padding: 30px 0;
         background-color: #1D1E2E;
         border-radius: 10px;
