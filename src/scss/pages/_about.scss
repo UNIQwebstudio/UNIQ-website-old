@@ -190,14 +190,14 @@
     }
 
     &__c-designers {
-        flex-basis: 23.6%;
-        padding: 40px 20px;
+        flex-basis: 24%;
+        padding: 20px 0;
         //border: 1px solid red;
         background-color: #1D1E2E;
         border-radius: 10px;
         position: relative;
 
-        &::before {
+        /*&::before {
             position: absolute;
             top: 0;
             left: 0;
@@ -218,22 +218,24 @@
             font-weight: medium;
             color: #C25656;
             transform: rotate(-90deg) translateY(-55px) translateX(-215px);
-        }
+        }*/
     }
 
     &__designer {
+        //border: 1px solid red;
+        padding: 10px 20px;
         &--mb_3 {
-            margin-bottom: 15px;
+            //margin-bottom: 15px;
         }
     }
 
     &__c-developers {
-        flex-basis: 74%;
-        padding: 40px 20px;
+        flex-basis: 72%;
+        padding: 20px 0;
         //border: 1px solid red;
         background-color: #1D1E2E;
         border-radius: 10px;
-        position: relative;
+        /*position: relative;
 
         &::before {
             position: absolute;
@@ -244,6 +246,16 @@
             font-size: 40px;
             font-weight: medium;
             transform: rotate(-90deg) translateY(-415px) translateX(-80px);
+        }*/
+    }
+
+    &__developer {
+        flex-basis: 33.33%;
+        //border: 1px solid red;
+        padding: 10px 20px;
+
+        &--mb_3 {
+            //margin-bottom: 15px;
         }
     }
 
@@ -279,14 +291,6 @@
         text-align: center;
     }
 
-    &__developer {
-        flex-basis: 28%;
-
-        &--mb_3 {
-            margin-bottom: 15px;
-        }
-    }
-
     &__developer-name {
         margin-top: 10px;
         font-size: 20px;
@@ -311,7 +315,7 @@
         border-radius: 10px;
         padding: 40px 20px;
         //border: 1px solid red;
-        position: relative;
+        /*position: relative;
 
         &::before {
             position: absolute;
@@ -322,7 +326,7 @@
             font-size: 40px;
             font-weight: medium;
             transform: rotate(-90deg) translateY(-145px) translateX(-90px);
-        }
+        }*/
     }
 
     &__managment-flex {
@@ -330,6 +334,35 @@
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__info-row_2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg) translateX(-50px) translateY(-160px);
+    }
+
+    &__managment-text,
+    &__designers-text,
+    &__amp-text,
+    &__developers-text {
+        font-family: "Roboto",sans-serif;
+        font-size: 40px;
+        font-weight: medium;
+    }
+
+    &__amp-text {
+        margin: 0 20px;
+        color: #C25656;
+    }
+
+    &__info-row_1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotate(-90deg) translateX(-205px) translateY(-255px);
     }
 
     &__managment {
