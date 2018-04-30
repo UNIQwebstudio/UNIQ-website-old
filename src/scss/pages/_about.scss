@@ -31,7 +31,7 @@
             left: -100px;
             content: "";
             width: 80px;
-            height: 150vh;
+            height: 100vh;
             background-color: #C25656;
             border-radius: 10px;
             transform: translateX(-120%);
@@ -44,7 +44,7 @@
             left: 0;
             content: "";
             width: 80px;
-            height: 80vh;
+            height: 60vh;
             background-color: #C8C8C8;
             border-radius: 10px;
             transform: translateY(100%);
@@ -138,14 +138,14 @@
         position: relative;
         width: 100%;
 
-        &::after {
+        .rellaxTest3 {
             position: absolute;
             top: 0;
-            right: -5px;
+            right: -100px;
             content: "";
             background-color: #C25656;
             width: 75px;
-            height: 765px;
+            height: 40vh;
             border-radius: 10px;
             transform: translateX(120%) translateY(22%);
             opacity: 0.8;
@@ -155,7 +155,7 @@
     &__company {
         background-color: #171724;
         flex-basis: 32%;
-        height: 20vh;
+        height: 10vh;
         border-radius: 10px;
 
         &--mb_1 {
@@ -184,32 +184,30 @@
 
     &__c-designers {
         flex-basis: 24%;
-        padding-top: 58px;
-        padding-bottom: 47px;
-        padding-left: 65px;
-        padding-right: 70px;
+        // padding-top: 58px;
+        // padding-bottom: 47px;
+        // padding-left: 65px;
+        // padding-right: 70px;
+        padding: 30px 0;
         background-color: #1D1E2E;
         border-radius: 10px;
         position: relative;
     }
 
     &__designer {
-        padding: 10px 0;
+        padding: 15px 20px;
     }
 
     &__c-developers {
         flex-basis: 72%;
-        padding-top: 58px;
-        padding-bottom: 47px;
-        padding-left: 65px;
-        padding-right: 70px;
+        padding: 30px 0;
         background-color: #1D1E2E;
         border-radius: 10px;
     }
 
     &__developer {
         flex-basis: 33.33%;
-        padding: 10px 20px;
+        padding: 15px 20px;
     }
 
     &__developers-flex {
@@ -276,10 +274,17 @@
         position: relative;
     }
 
+    &__info-row_1 {
+        position: absolute;
+        top: 1vh;
+        left: 2.5vw;
+        transform: rotate(-90deg) translateX(-205px) translateY(-255px);
+    }
+
     &__info-row_2 {
         position: absolute;
         top: 0;
-        left: 0;
+        left: 1.2vw;
         transform: rotate(-90deg) translateX(-50px) translateY(-160px);
     }
 
@@ -288,19 +293,12 @@
     &__amp-text,
     &__developers-text {
         font-family: 'Roboto-Bold';
-        font-size: 40px;
+        font-size: 30px;
     }
 
     &__amp-text {
         margin: 0 20px;
         color: #C25656;
-    }
-
-    &__info-row_1 {
-        position: absolute;
-        top: 3vh;
-        left: -0.5vw;
-        transform: rotate(-90deg) translateX(-205px) translateY(-255px);
     }
 
     &__managment {

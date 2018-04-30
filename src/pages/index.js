@@ -31,7 +31,7 @@ if(window.pageYOffset >= homeHeight-200) {
 */
 
 window.onresize = function() {
-  if(screen.height < 650 || screen.width < 768) {
+  if(screen.height < 650 || screen.width < 1217) {
     side.style.display = "none";
     mobileSide.style.display = "flex";
   }
@@ -43,7 +43,7 @@ window.onresize = function() {
 
 //==================== Mobile projects animation direction changed ===============
 
-if(deviceWidth <= 768) {
+if(deviceWidth <= 1217) {
   for(let i = 1; i <= projects.length; i++){
     document.querySelector('.p'+i).style.transform = "translateX(100vw)";
   }
@@ -102,7 +102,14 @@ pointers[2].addEventListener("click", function() {
 ================================= Parallax =============================
 */
 
-var parllax = new relaxParallax('.rellaxTest', {
+var parallax = new relaxParallax('.rellaxTest', {
+  speed: -2,
+  center: false,
+  vertical: true,
+  horizontal: false
+})
+
+var parallax2 = new relaxParallax('.rellaxTest3', {
   speed: -2,
   center: false,
   vertical: true,
