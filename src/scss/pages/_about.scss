@@ -181,7 +181,7 @@
 
     &__c-team {
         display: flex;
-        // justify-content: space-between;
+        justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
     }
@@ -192,7 +192,7 @@
         background-color: #1D1E2E;
         border-radius: 10px;
         position: relative;
-        margin-right: 50px;
+        // margin-right: 50px;
     }
 
     &__designer {
@@ -285,7 +285,7 @@
     &__info-row_2 {
         position: absolute;
         top: -1vh;
-        left: 1.3vw;
+        left: 1.4vw;
         transform: rotate(-90deg) translateX(-50px) translateY(-160px);
     }
 
