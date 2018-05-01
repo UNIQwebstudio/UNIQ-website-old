@@ -120,7 +120,7 @@ var parallax2 = new relaxParallax('.rellaxTest3', {
 ================================= News Feed Animation ===========================================
 */
 
-// var feedItems = document.getElementsByClassName('.')
+// const feedItems = document.getElementsByClassName('.')
 
 /*
 ================================= Mobile sidebar ========================================

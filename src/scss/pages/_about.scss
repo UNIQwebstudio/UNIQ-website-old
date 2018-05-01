@@ -181,7 +181,7 @@
 
     &__c-team {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
     }
@@ -192,6 +192,7 @@
         background-color: #1D1E2E;
         border-radius: 10px;
         position: relative;
+        margin-right: 50px;
     }
 
     &__designer {
@@ -259,7 +260,7 @@
     }
 
     &__c-managment {
-        margin-top: 50px;
+        margin-top: 45px;
         flex-basis: 65%;
         background-color: #1D1E2E;
         border-radius: 10px;
