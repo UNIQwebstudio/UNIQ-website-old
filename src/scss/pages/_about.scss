@@ -44,7 +44,7 @@
             left: 0;
             content: "";
             width: 80px;
-            height: 60vh;
+            height: 50vh;
             background-color: #C8C8C8;
             border-radius: 10px;
             transform: translateY(100%);
@@ -277,15 +277,15 @@
 
     &__info-row_1 {
         position: absolute;
-        top: -4vh;
-        left: 2.5vw;
+        top: -30px;
+        left: 50px;
         transform: rotate(-90deg) translateX(-205px) translateY(-255px);
     }
 
     &__info-row_2 {
         position: absolute;
-        top: -1vh;
-        left: 1.4vw;
+        top: -10px;
+        left: 25px;
         transform: rotate(-90deg) translateX(-50px) translateY(-160px);
     }
 
