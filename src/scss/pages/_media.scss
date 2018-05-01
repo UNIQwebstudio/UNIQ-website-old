@@ -4,6 +4,49 @@
   }
 }
 
+@media screen and (min-width: 1470px) {
+    .about-wrap__img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-wrap__designer-name {
+        font-size: 25px;
+    }
+
+    .about-wrap__designer-position {
+        font-size: 23px;
+    }
+
+    .about-wrap__developer-name {
+        font-size: 25px;
+    }
+
+    .about-wrap__developer-position {
+        font-size: 23px;
+    }
+
+    .about-wrap__managment-name {
+        font-size: 25px;
+    }
+
+    .about-wrap__management-position {
+        font-size: 23px;
+    }
+
+    .about-wrap__feed-title.about-wrap__feed-title--mb_2 {
+        font-size: 35px;
+    }
+
+    .about-wrap__feed-item.about-wrap__feed-item--mb_2 {
+        font-size: 25px;
+    }
+
+    .about-wrap__feed-item {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: $desktopmax) {
   .home {
     h1 {
