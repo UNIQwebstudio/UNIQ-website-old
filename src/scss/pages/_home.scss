@@ -1,11 +1,12 @@
 .home-wrap {
   box-sizing: border-box;
+  overflow: hidden;
   position: relative;
   height: 100vh;
-  background-color: $primaryColor;
+  background-color: #F71033;
   background-image: url('../../assets/images/background.png');
   background-size: cover;
-  // background-attachment: fixed;
+  z-index: 0;
 
   .home {
     bottom: 8%;
@@ -14,6 +15,7 @@
     color: #fff;
     font-family: 'Roboto-Bold';
     text-transform: uppercase;
+    z-index: 100;
 
     h1 {
       font-size: 62px;
@@ -35,5 +37,6 @@
     bottom: 2%;
     left: calc(50% - 16px);
     background-image: url('../../assets/images/down-arrow.svg');
+    z-index: 3;
   }
 }

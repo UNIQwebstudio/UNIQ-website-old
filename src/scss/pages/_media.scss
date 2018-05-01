@@ -147,6 +147,14 @@
         margin-bottom: 20px;
     }
 
+    .side {
+        display: none!important;
+    }
+
+    .side-inner-mobile {
+        display: flex;
+    }
+
     &__title {
         //border: 1px solid red;
         font-size: 40px;
@@ -578,7 +586,15 @@
       font-size: 16px!important;
       letter-spacing: 0;
     }
-  }  
+  }
+
+  .side-inner-mobile {
+      display: flex;
+  }
+
+  .side {
+      display: none;
+  }
 }
 
 

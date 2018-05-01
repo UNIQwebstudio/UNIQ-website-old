@@ -31,7 +31,7 @@ if(window.pageYOffset >= homeHeight-200) {
 */
 
 window.onresize = function() {
-  if(screen.height < 650 || screen.width < 1217) {
+  if(screen.height < 650 || screen.width < 1218) {
     side.style.display = "none";
     mobileSide.style.display = "flex";
   }
@@ -76,7 +76,6 @@ window.onscroll = function() {
     sectionInner.textContent = "About";
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
   }
-
 }
 
 //======================== Desktop sidebar event listener ========================
@@ -102,25 +101,44 @@ pointers[2].addEventListener("click", function() {
 ================================= Parallax =============================
 */
 
-var parallax = new relaxParallax('.rellaxTest', {
-  speed: -2,
-  center: false,
-  vertical: true,
-  horizontal: false
-})
+// var parallax = new relaxParallax('.home-wrap', {
+//   speed: -5,
+//   center: false,
+//   vertical: true,
+//   horizontal: false
+// })
 
-var parallax2 = new relaxParallax('.rellaxTest3', {
-  speed: -2,
-  center: false,
-  vertical: true,
-  horizontal: false
-})
+window.addEventListener('load', function () {
+
+  var O = document.querySelector('.home'),
+      X = 0,
+      Y = 0,mouseX=0,mouseY=0;
+  document.querySelector('.home-wrap').addEventListener('mousemove', function (ev) {
+      ev = window.event || ev;
+      X=ev.pageX;
+      Y=ev.pageY;
+  });
+
+  function move() {
+      var p = 'px';
+      console.log(X,Y);
+      O.style.left = X + p;
+      O.style.top = Y + p;
+      
+      setTimeout(move, 10);
+  }
+  move();
+
+});
 
 /*
-================================= News Feed Animation ===========================================
+================================= Home background animation ===========================================
 */
 
-// const feedItems = document.getElementsByClassName('.')
+// document.querySelector('.home-wrap').addEventListener("mousemove", function() {
+//   console.log("X: " + event.clientX + " Y: " + event.clientY);
+//   document.querySelector(".layer-2").style.transform = "translate3d("+ event.clientY - homeHeight + 100 +"px, 0px, 0px";
+// })
 
 /*
 ================================= Mobile sidebar ========================================
