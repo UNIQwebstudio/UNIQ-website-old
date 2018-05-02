@@ -1,4 +1,78 @@
 .price-wrap {
     height: 100vh;
     background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 20vw;
+
+    .col-1 {
+        width: 62%;
+        height: 65%;
+        padding-left: 150px;
+        padding-right: 3vw;
+
+        .ph {
+            width: 100%;
+            height: 7vh;
+            background-color: #ffffff;
+            opacity: 0.6;
+            border-radius: 0.7vw;
+            margin-bottom: 4.5vh;
+        }
+    }
+
+    .col-2 {
+        width: 48%;
+        height: 65%;
+        padding-left: 3vw;
+    }
+
+    .service {
+        background-color: #A7454F;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-right: 3vw;
+        padding-left: 3vw;
+        border-radius: 0.7vw;
+
+        h4 {
+            font-family: 'Roboto-Bold';
+            font-size: 2vw;
+            color: #ffffff;
+            margin-bottom: 1vh;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 1vw;
+            font-family: 'Roboto-Light';
+            margin-bottom: 1vh;
+        }
+
+        .list-wrap {
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+
+            .list-item {
+                margin-bottom: 1vh;
+                height: 70px;
+                background-color: #9B3E47;
+                border-radius: 0.7vw;
+            }
+        }
+    }
+
+    .s1 {
+        width: 100%;
+        position: relative;
+    }
+
+    .s2 {
+        margin-bottom: 4vh;
+    }
+
+    .s3 {
+        margin-top: 4vh;
+    }
 }
