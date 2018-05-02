@@ -1,74 +1,62 @@
+/*
+==================================== Large devices ===========================================
+*/
+
 @media screen and (min-width: $desktopmin) {
+
+  // Home page
+
+
+
+  // Sidebar
+
+  .side-inner-mobile {
+    display: none;
+  }
+
+  // About page
+
   .description-mobile {
     display: none;
   }
 }
 
-@media screen and (min-width: 2000px) {
-    .about-wrap__img {
-        width: 180px;
-        height: 180px;
-    }
+/*
+===================================== Medium Devices =========================================
+*/
 
-    .about-wrap__designer-name {
-        font-size: 25px;
-    }
+@media only screen and (max-width:$desktopmax) and (min-width: 737px) {
 
-    .about-wrap__designer-position {
-        font-size: 23px;
-    }
+  // Home page
 
-    .about-wrap__developer-name {
-        font-size: 25px;
-    }
-
-    .about-wrap__developer-position {
-        font-size: 23px;
-    }
-
-    .about-wrap__managment-name {
-        font-size: 25px;
-    }
-
-    .about-wrap__management-position {
-        font-size: 23px;
-    }
-
-    .about-wrap__feed-title.about-wrap__feed-title--mb_2 {
-        font-size: 35px;
-    }
-
-    .about-wrap__feed-item.about-wrap__feed-item--mb_2 {
-        font-size: 25px;
-    }
-
-    .about-wrap__feed-item {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: $desktopmax) {
   .home {
     h1 {
-      font-size: 65px!important;
-      margin-bottom: 9px;
+      font-size: 8vw!important;
+      letter-spacing: 2px;
+      margin-bottom: 1vw;
     }
 
     h2 {
-      font-size: 26px!important;
-      letter-spacing: 0;
+      font-family: 'Roboto-Light';
+      font-size: 3vw!important;
+      letter-spacing: 1px;
     }
   }
 
+  // Sidebar
+
   .side {
-    display: none!important;
+    display: none !important;
   }
 
   .side-inner-mobile {
     display: flex;
   }
 
+  // Projects page
+
   .projects-wrap {
+    padding: 25px 50px;
     height: auto;
 
     .row-1 {
@@ -105,7 +93,7 @@
       flex-wrap: wrap;
 
       .p3 {
-        width: 100% ;
+        width: 100%;
         transform: translateX(500%);
 
         &::after {
@@ -118,7 +106,7 @@
       }
 
       .p4 {
-        width: 100% ;
+        width: 100%;
         transform: translateX(500%);
 
         &:hover {
@@ -127,7 +115,7 @@
       }
 
       .p5 {
-        width: 100% ;
+        width: 100%;
         transform: translateX(500%);
 
         &:hover {
@@ -136,231 +124,135 @@
       }
     }
   }
-}
 
-@media only screen and (max-width:$desktopmax) and (min-width: 737px) {
+  // About page
+
   .about-wrap {
     background-color: #222338;
-    padding: 0 35px 30px;
+    padding: 25px 62px;
 
     &__f-block {
-        margin-bottom: 20px;
-    }
-
-    .side {
-        display: none!important;
-    }
-
-    .side-inner-mobile {
-        display: flex;
-    }
-
-    &__title {
-        //border: 1px solid red;
-        font-size: 40px;
-        line-height: 50px;
-        position: relative;
-
-        &::before {
-          position: absolute;
-          top: -10px;
-          right: 0;
-          content: "";
-          width: 30px;
-          height: 200%;
-          background-color: #C25656;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px; 
-          transform: translateX(140%);
-        }
-
-        &::after {
-          position: absolute;
-          top: -10px;
-          right: -25%;
-          content: "";
-          width: 30px;
-          height: 100%;
-          background-color: #C8C8C8;
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px; 
-          transform: translateX(100%);
-        }
-
-        .rellaxTest {
-            display: none;
-        }
-
-        .rellaxTest2 {
-            display: none;
-        }
-    }
-
-    &__c-news-feed {
-        display: none;
-
-        &-mobile {
-          margin-top: 50px;
-          display: block;
-          width: 90%;
-        }
+      padding-left: 0;
+      margin-bottom: 20px;
     }
 
     &__s-block {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    &__experience-title {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    &__experience-subtitle {
-        font-size: 15px;
-        line-height: 30px;
+      padding-left: 0;
+      margin-bottom: 20px;
     }
 
     &__c-companies {
-        padding: 55px 45px;
-
-        &::after {
-             display: none;
-        }
+      width: 100%;
+      padding: 55px 45px;
     }
 
     &__company {
-        flex-basis: 48%;
+      flex-basis: 48%;
+      height: 100px;
 
-        &--mb_1 {
-            margin-bottom: 0;
+      &--mb_1 {
+        margin-bottom: 0;
 
-            &-mobile {
-              margin-bottom: 30px;
-            }
+        &-mobile {
+          margin-bottom: 2vw;
         }
+      }
     }
 
     &__t-block {
-        padding: 0;
+      padding: 0;
+    }
+
+    &__c-team {
+      padding-left: 0;
     }
 
     &__team-title {
-        font-size: 20px;
-        margin-bottom: 40px;
+      margin-bottom: 6vw;
+    }
+
+    &__img {
+      width: 9vw;
+      height: 9vw;
     }
 
     &__c-designers {
-        flex-basis: 24%;
-        padding: 30px 0;
-        background-color: #1D1E2E;
-        border-radius: 10px;
-        position: relative;
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            content: "Designers";
-            font-family: "Roboto",sans-serif;
-            font-size: 20px;
-            font-weight: medium;
-            transform: translateY(-140%) translateX(-50%);
-        }
-    }
-
-    &__c-developers {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            content: "Developers";
-            font-family: "Roboto",sans-serif;
-            font-size: 20px;
-            font-weight: medium;
-            transform: translateY(-140%) translateX(-50%);
-        }
+      flex-basis: 24%;
+      padding: 30px 0;
+      background-color: #1D1E2E;
+      border-radius: 10px;
+      position: relative;
+      
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 27%;
+        content: "Designers";
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 2.5vw;
+        transform: translateY(-140%) translateX(-50%);
+      }
     }
 
     &__designer-name {
-        font-size: 12px;
+      font-size: 1.1vw;
     }
 
     &__designer-position {
-        font-size: 12px;
+      font-size: 1.2vw;
+    }
+
+    &__c-developers {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        content: "Developers";
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 2.5vw;
+        transform: translateY(-140%) translateX(-50%);
+      }
     }
 
     &__developer-name {
-        font-size: 12px;
+      font-size: 1.1vw;
     }
 
     &__developer-position {
-        font-size: 12px;
+      font-size: 1.2vw;
     }
-
+    
     &__c-managment {
-        flex-basis: 65%;
-        position: relative;
+      flex-basis: 65%;
+      position: relative;
 
-        &::before {
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            content: "Managment";
-            font-family: "Roboto",sans-serif;
-            font-size: 20px;
-            font-weight: medium;
-            transform: translateY(-50%) translateX(80%);
-        }
-    }
-
-    &__managment-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        position: relative;
-    }
-
-    &__info-row_2 {
-        display: none;
-    }
-
-    &__managment-text,
-    &__designers-text,
-    &__amp-text,
-    &__developers-text {
-        font-family: "Roboto",sans-serif;
-        font-size: 40px;
-        font-weight: medium;
-    }
-
-    &__amp-text {
-        margin: 0 20px;
-        color: #C25656;
-    }
-
-    &__info-row_1 {
-        display: none;
-    }
-
-    &__managment {
-        flex-basis: 30%;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        content: "Managment";
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 2.5vw;
+        transform: translateY(-50%) translateX(80%);
+      }
     }
 
     &__managment-name {
-        font-size: 12px;
+      font-size: 1.1vw;
     }
 
-    &__managment-position {
-        font-size: 12px;
+    &__management-position {
+      font-size: 1.2vw;
     }
-  }
 
-  .rellaxTest3 {
-    display: none;
+    &__info-row_2 {
+      display: none;
+    }
+
+    &__info-row_1 {
+      display: none;
+    }
   }
 
   .description-mobile {
@@ -368,242 +260,244 @@
   }
 }
 
+/*
+================================= The Smallest Devices ================================
+*/
+
 @media (max-width: 736px) {
-  .about-wrap {
-    background-color: #222338;
-    padding: 0 35px 30px;
 
-    &__f-block {
-        margin-bottom: 20px;
+  // Home page
+
+  .home {
+    h1 {
+      font-size: 12vw!important;
+      letter-spacing: 2px;
+      margin-bottom: 1vw;
     }
 
-    &__title {
-        font-size: 40px;
-        line-height: 50px;
-        position: relative;
-
-        &::before {
-          display: none;
-        }
-
-        &::after {
-          display: none;
-        }
-
-        .rellaxTest {
-            display: none;
-        }
-
-        .rellaxTest2 {
-            display: none;
-        }
-    }
-
-    &__c-news-feed {
-        display: none;
-
-        &-mobile {
-          margin-top: 50px;
-          display: block;
-          width: 100%;
-        }
-
-        &:after {
-          display: none;
-        }
-    }
-
-    &__feed-title {
-      font-size: 20px;
-    }
-
-    &__feed-item {
-      font-size: 16px;
-    }
-
-    &__s-block {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    &__experience-title {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    &__experience-subtitle {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    &__c-companies {
-        padding: 25px 15px;
-
-        &::after {
-             display: none;
-        }
-    }
-
-    &__company {
-        flex-basis: 48%;
-
-        &--mb_1 {
-            margin-bottom: 0;
-
-            &-mobile {
-              margin-bottom: 30px;
-            }
-        }
-    }
-
-    &__t-block {
-        padding: 0;
-    }
-
-    &__team-title {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    &__c-designers {
-        flex-basis: 100%;
-        padding: 30px 0;
-        background-color: #1D1E2E;
-        border-radius: 10px;
-        position: relative;
-        margin: 50px 0;
-
-        &::before {
-            display: none;
-        }
-    }
-
-    &__c-developers {
-        flex-basis: 100%;
-        position: relative;
-        margin: 50px 0;
-
-        &::before {
-            display: none;
-        }
-    }
-
-    &__developer {
-      margin: auto;
-    }
-
-    &__designer-name {
-        font-size: 12px;
-    }
-
-    &__designer-position {
-        font-size: 12px;
-    }
-
-    &__developer-name {
-        font-size: 12px;
-    }
-
-    &__developer-position {
-        font-size: 12px;
-    }
-
-    &__c-managment {
-        flex-basis: 100%;
-        position: relative;
-        margin-top: 50px;
-
-        &::before {
-            display: none;
-        }
-    }
-
-    &__managment {
-      margin: auto;
-      margin-bottom: 30px;
-    }
-
-    &__managment-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        position: relative;
-    }
-
-    &__info-row_2 {
-        display: none;
-    }
-
-    &__managment-text,
-    &__designers-text,
-    &__amp-text,
-    &__developers-text {
-        font-family: "Roboto",sans-serif;
-        font-size: 40px;
-        font-weight: medium;
-    }
-
-    &__amp-text {
-        margin: 0 20px;
-        color: #C25656;
-    }
-
-    &__info-row_1 {
-        display: none;
-    }
-
-    &__managment {
-        flex-basis: 30%;
-    }
-
-    &__managment-name {
-        font-size: 12px;
-    }
-
-    &__managment-position {
-        font-size: 12px;
+    h2 {
+      font-family: 'Roboto-Light';
+      font-size: 4vw!important;
+      letter-spacing: 1px;
     }
   }
 
-  .rellaxTest3 {
-    display: none;
+  // Sidebar
+
+  .side {
+    display: none !important;
+  }
+
+  .side-inner-mobile {
+    display: flex;
+  }
+
+  // Projects page
+
+  .projects-wrap {
+    padding: 25px 30px;
+    height: auto;
+
+    .row-1 {
+      flex-wrap: wrap;
+
+      .p1 {
+        width: 100%;
+        transform: translateX(500%);
+
+        &:hover {
+          width: 100%;
+        }
+      }
+
+      .p2 {
+        width: 100%;
+        transform: translateX(500%);
+
+        &::after {
+          display: none;
+        }
+
+        &::before {
+          display: none;
+        }
+
+        &:hover {
+          width: 100%;
+        }
+      }
+    }
+
+    .row-2 {
+      flex-wrap: wrap;
+
+      .p3 {
+        width: 100%;
+        transform: translateX(500%);
+
+        &::after {
+          display: none;
+        }
+
+        &:hover {
+          width: 100%;
+        }
+      }
+
+      .p4 {
+        width: 100%;
+        transform: translateX(500%);
+
+        &:hover {
+          width: 100%;
+        }
+      }
+
+      .p5 {
+        width: 100%;
+        transform: translateX(500%);
+
+        &:hover {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // About page
+
+  .about-wrap {
+    background-color: #222338;
+    padding: 25px 42px;
+
+    &__f-block {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: 8vw;
+    }
+
+    &__s-block {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &__experience-title {
+      font-size: 4vw;
+      line-height: 6vw;
+    }
+
+    &__experience-subtitle {
+      font-size: 3vw;
+      line-height: 5vw;
+    }
+
+    &__c-companies {
+      width: 100%;
+      padding: 25px 25px;
+    }
+
+    &__company {
+      flex-basis: 48%;
+      height: 100px;
+
+      &--mb_1 {
+        margin-bottom: 0;
+
+        &-mobile {
+          margin-bottom: 2vw;
+        }
+      }
+    }
+
+    &__t-block {
+      padding: 0;
+    }
+
+    &__c-team {
+      display: flex;
+      padding-left: 0;
+    }
+
+    &__team-title {
+      font-size: 4vw;
+    }
+
+    &__img {
+      width: 17vw;
+      height: 17vw;
+    }
+
+    &__c-designers {
+      flex-basis: 80%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2vw 0;
+    }
+
+    &__designer-name {
+      font-size: 2vw;
+    }
+
+    &__designer-position {
+      font-size: 2.1vw;
+    }
+
+    &__c-developers {
+      flex-basis: 100%;
+      margin: 2vw 0;
+    }
+
+    &__developers-flex {
+      justify-content: space-around;
+    }
+
+    &__developer-name {
+      font-size: 2vw;
+    }
+
+    &__developer-position {
+      font-size: 2.1vw;
+    }
+    
+    &__c-managment {
+      flex-basis: 100%;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2vw;
+    }
+
+    &__managment {
+      margin: 20px 20px;
+    }
+
+    &__managment-name {
+      font-size: 2vw;
+    }
+
+    &__managment-position {
+      font-size: 2.1vw;
+    }
+
+    &__info-row_1 {
+      display: none;
+    }
+
+    &__info-row_2 {
+      display: none;
+    }
   }
 
   .description-mobile {
     width: 100%;
     font-family: 'Roboto-Light', sans-serif;
     font-size: 15px;
-  }
-
-  .home {
-    h1 {
-      font-size: 35px!important;
-      margin-bottom: 9px;
-    }
-
-    h2 {
-      font-size: 16px!important;
-      letter-spacing: 0;
-    }
-  }
-
-  .side-inner-mobile {
-      display: flex;
-  }
-
-  .side {
-      display: none;
-  }
-}
-
-
-@media (min-width: $desktopmin) {
-  .side-inner-mobile {
-    display: none;
-  }
-
-  .about-wrap__c-news-feed.about-wrap__c-news-feed-mobile {
-    display: none;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
   }
 }

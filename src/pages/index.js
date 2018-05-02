@@ -71,7 +71,7 @@ window.onscroll = function() {
     sectionInner.textContent = "Projects";
     currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
   }
-  else if(pageYOffset >= (homeHeight-300)*2) {
+  else if(pageYOffset >= (homeHeight*2)-300) {
     sectionDetail.style.transform = "translateY(168px)";
     sectionInner.textContent = "About";
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
@@ -108,28 +108,28 @@ pointers[2].addEventListener("click", function() {
 //   horizontal: false
 // })
 
-window.addEventListener('load', function () {
+// window.addEventListener('load', function () {
 
-  var O = document.querySelector('.home'),
-      X = 0,
-      Y = 0,mouseX=0,mouseY=0;
-  document.querySelector('.home-wrap').addEventListener('mousemove', function (ev) {
-      ev = window.event || ev;
-      X=ev.pageX;
-      Y=ev.pageY;
-  });
+//   var O = document.querySelector('.home'),
+//       X = 0,
+//       Y = 0,mouseX=0,mouseY=0;
+//   document.querySelector('.home-wrap').addEventListener('mousemove', function (ev) {
+//       ev = window.event || ev;
+//       X=ev.pageX;
+//       Y=ev.pageY;
+//   });
 
-  function move() {
-      var p = 'px';
-      console.log(X,Y);
-      O.style.left = X + p;
-      O.style.top = Y + p;
+//   function move() {
+//       var p = 'px';
+//       console.log(X,Y);
+//       O.style.left = X + p;
+//       O.style.top = Y + p;
       
-      setTimeout(move, 10);
-  }
-  move();
+//       setTimeout(move, 10);
+//   }
+//   move();
 
-});
+// });
 
 /*
 ================================= Home background animation ===========================================
