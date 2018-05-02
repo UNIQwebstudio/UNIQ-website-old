@@ -61,6 +61,10 @@ window.onscroll = function() {
 
   //================== Active slide pointer animtion ==========================
 
+  let aboutHeight = document.querySelector('.about-wrap').scrollHeight;
+  let coord = homeHeight*2;
+  coord+=aboutHeight;
+
   if(window.pageYOffset < homeHeight-300) {
     sectionDetail.style.transform = "translateY(0px)";
     sectionInner.textContent = "Home";
@@ -71,10 +75,16 @@ window.onscroll = function() {
     sectionInner.textContent = "Projects";
     currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
   }
-  else if(pageYOffset >= (homeHeight*2)-300) {
+  else if(pageYOffset >= (homeHeight*2)-300 && pageYOffset < coord-300) {
     sectionDetail.style.transform = "translateY(168px)";
     sectionInner.textContent = "About";
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
+  }
+  else if(pageYOffset >= coord-300) {
+    console.log("price");
+    sectionDetail.style.transform = "translateY(252px)";
+    sectionInner.textContent = "Price";
+    currentNavPosition.style.transform = "translateY(252px) rotate(-45deg)";
   }
 }
 
