@@ -1,10 +1,11 @@
 .side {
   position: fixed;
+  box-sizing: border-box;
   right: 0;
   top: 0;
   z-index: 1;
   height: 100%;
-  width: 8vw;
+  width: 4.5vw;
   background-color: rgb(29, 31, 45);
   display: -webkit-flex;
   display: -ms-flex;
@@ -14,20 +15,22 @@
 
   &-inner {
     position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 40vh;
 
     .dott {
+      box-sizing: border-box;
       display: block;
       position: absolute;
-      top: 27px;
-      width: 10px;
-      height: 10px;
-      z-index: 22;
+      top: 15px;
+      width: 1vh;
+      height: 1vh;
+      z-index: 5;
       background-color: #fff;
       transition-delay: .2s;
       transition-duration: .7s;
@@ -67,17 +70,18 @@
 
     .line {
       position: absolute;
-      width: 2px;
-      height: 343px;
-      max-height: 343px;
+      width: 1px;
+      height: 90%;
       background-color: #C25656;
+      // display: none;
     }
 
     .point-wrap {
-      margin-top: 33px;
-      margin-bottom: 33px;
+      box-sizing: border-box;
+      margin-top: 33%;
+      margin-bottom: 33%;
       width: 100%;
-      height: 18px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -89,8 +93,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 18px;
-        height: 18px;
+        width: 1.1vw;
+        height: 1.1vw;
         transform: rotate(45deg);
         border: 2px solid #fff;
         background-color: $primaryColor;
@@ -115,8 +119,8 @@
 
     a {
       overflow: hidden;
-      font-size: 14px;
-      line-height: 37px;
+      font-size: 0.7vw;
+      line-height: 2vw;
       font-family: 'MyriadPro-Bold';
       cursor: pointer;
       display: block;
@@ -137,7 +141,7 @@
           left: 0;
           position: absolute;
           width: 10%;
-          height: 2px;
+          height: 0.2vh;
           background-color: #C25656;
           content: '';
           transform: translateX(-100%);
@@ -159,7 +163,7 @@
           left: 0;
           position: absolute;
           width: 10%;
-          height: 2px;
+          height: 0.2vh;
           background-color: #C25656;
           content: '';
           transform: translateX(-100%);

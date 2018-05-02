@@ -23,7 +23,7 @@ sectionInner.innerHTML = "Home";
 if(window.pageYOffset >= homeHeight-200) {
   sectionDetail.style.transform = "translateY(85px)";
   sectionInner.innerHTML = "Projects";
-  currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
+  currentNavPosition.style.transform = "translateY(4.9vw) rotate(-45deg)";
 }
 
 /*
@@ -64,17 +64,17 @@ window.onscroll = function() {
   if(window.pageYOffset < homeHeight-300) {
     sectionDetail.style.transform = "translateY(0px)";
     sectionInner.textContent = "Home";
-    currentNavPosition.style.transform = "translateY(0px) rotate(-45deg)";
+    currentNavPosition.style.transform = "translateY(0) rotate(-45deg)";
   }
   else if(pageYOffset >= homeHeight-300 && pageYOffset < (homeHeight-300)*2){
     sectionDetail.style.transform = "translateY(85px)";
     sectionInner.textContent = "Projects";
-    currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
+    currentNavPosition.style.transform = "translateY(4.65vh) rotate(-45deg)";
   }
   else if(pageYOffset >= (homeHeight*2)-300) {
     sectionDetail.style.transform = "translateY(168px)";
     sectionInner.textContent = "About";
-    currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
+    currentNavPosition.style.transform = "translateY(368px) rotate(-45deg)";
   }
 }
 
