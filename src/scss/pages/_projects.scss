@@ -19,9 +19,9 @@
     .project {
       position: relative;
       transition: .4s;
-      margin: 10px;
+      margin: 0.5vw;
       background-color: #C25656;
-      border-radius: 10px;
+      border-radius: 0.7vw;
       cursor: pointer;
 
       &:hover {
@@ -39,7 +39,7 @@
         height: 100%;
         width: 100%;
         transition: all .5s;
-        border-radius: 10px;
+        border-radius: 0.7vw;
 
         &:hover {
           background-color: transparent;
@@ -59,7 +59,7 @@
           width: 90%;
           height: 30%;
           background-color: #fff;
-          border-radius: 10px;
+          border-radius: 0.7vw;
         }
       }
     }
@@ -97,10 +97,10 @@
         position: absolute;
         background-color: #ACACAE;
         width: 100%;
-        height: 46px;
-        top: -77px;
+        height: 2vw;
+        top: -3vw;
         pointer-events: none;
-        border-radius: 10px;
+        border-radius: 0.7vw;
       }
 
       &:hover {
@@ -120,11 +120,11 @@
 
     .project {
       transition: .4s;
-      margin: 12px;
+      margin: 0.5vw;
       background-color: #C25656;
       position: relative;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 0.7vw;
 
       &:hover {
         -webkit-box-shadow: 6px 4px 56px 6px rgba(21, 21, 32, 0.75);
@@ -141,7 +141,7 @@
         height: 100%;
         width: 100%;
         transition: all .5s;
-        border-radius: 10px;
+        border-radius: 0.7vw;
 
         &:hover {
           background-color: transparent;
@@ -161,7 +161,7 @@
           width: 90%;
           height: 30%;
           background-color: #fff;
-          border-radius: 10px;
+          border-radius: 0.7vw;
         }
       }
     }
@@ -181,12 +181,12 @@
         content: '';
         position: absolute;
         width: 80%;
-        height: 48px;
+        height: 2vw;
         background-color: #ACACAE;
-        bottom: -79px;
+        bottom: -3vw;
         right: 0;
         pointer-events: none;
-        border-radius: 10px;
+        border-radius: 0.7vw;
       }
 
       &:hover {
