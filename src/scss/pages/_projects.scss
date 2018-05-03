@@ -75,8 +75,8 @@
       transform: translateX(-100vw);
 
       &:hover {
-        width: 36%;
-        height: 36vh;
+        // width: 36%;
+        // height: 36vh;
         transform: scale(1.02) !important;
       }
     }
@@ -104,8 +104,8 @@
       }
 
       &:hover {
-        width: 21%;
-        height: 26vh;
+        // width: 21%;
+        // height: 26vh;
         transform: scale(1.02) !important;
       }
     }
@@ -190,8 +190,6 @@
       }
 
       &:hover {
-        width: 16%;
-        height: 31vh;
         transform: scale(1.02) !important;
       }
     }
@@ -207,8 +205,6 @@
       transform: translateY(100vh);
 
       &:hover {
-        width: 31%;
-        height: 46vh;
         transform: scale(1.02) !important;
       }
     }
@@ -224,8 +220,6 @@
       transform: translateX(100vw);
 
       &:hover {
-        width: 16%;
-        height: 41vh;
         transform: scale(1.02) !important;
       }
     }

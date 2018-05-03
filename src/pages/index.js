@@ -49,6 +49,157 @@ if(deviceWidth <= 1217) {
   }
 }
 
+//=================== Projects hover animation ===========================
+
+for(let i = 0; i < projects.length; i++) {
+  projects[i].addEventListener("mouseover", function() {
+    slideUp(i);
+  });
+  projects[i].addEventListener("mouseleave", function() {
+    slideDown(i);
+  });
+}
+
+function slideUp(target) {
+  switch(target) {
+    case 0:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateX(3%)";
+        }
+        else {
+          projects[i].style.transform = "translateY(3%)";
+        }
+      }
+    }
+    break;
+    case 1:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateX(-3%)";
+        }
+        else {
+          projects[i].style.transform = "translateY(3%)";
+        }
+      }
+    }
+    break;
+    case 2:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateY(-3%)";
+        }
+        else {
+          projects[i].style.transform = "translateX(3%)";
+        }
+      }
+    }
+    break;
+    case 3:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateY(-3%)";
+        }
+        else {
+          if(i < target) {
+            projects[i].style.transform = "translateX(-3%)";
+          }
+          else {
+            projects[i].style.transform = "translateX(3%)";
+          }
+        }
+      }
+    }
+    break;
+    case 4:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateY(-3%)";
+        }
+        else {
+          if(i < target) {
+            projects[i].style.transform = "translateX(-3%)";
+          }
+          else {
+            projects[i].style.transform = "translateX(3%)";
+          }
+        }
+      }
+    }
+    break;
+  }
+}
+
+function slideDown(target) {
+  switch(target) {
+    case 0:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateX(0%)";
+        }
+        else {
+          projects[i].style.transform = "translateY(0%)";
+        }
+      }
+    }
+    break;
+    case 1:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateX(0%)";
+        }
+        else {
+          projects[i].style.transform = "translateY(0%)";
+        }
+      }
+    }
+    break;
+    case 2:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateY(0%)";
+        }
+        else {
+          projects[i].style.transform = "translateX(0%)";
+        }
+      }
+    }
+    break;
+    case 3:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateY(0%)";
+        }
+        else {
+          projects[i].style.transform = "translateX(0%)";
+        }
+      }
+    }
+    break;
+    case 4:
+    for(let i = 0; i < projects.length; i++) {
+      if(i != target) {
+        if(i < 2) {
+          projects[i].style.transform = "translateY(0%)";
+        }
+        else {
+          projects[i].style.transform = "translateX(0%)";
+        }
+      }
+    }
+    break;
+  }
+}
+
 window.onscroll = function() {
 
   //================== Projects block animation =============================
@@ -81,7 +232,6 @@ window.onscroll = function() {
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
   }
   else if(pageYOffset >= coord-300) {
-    console.log("price");
     sectionDetail.style.transform = "translateY(252px)";
     sectionInner.textContent = "Price";
     currentNavPosition.style.transform = "translateY(252px) rotate(-45deg)";
