@@ -106,6 +106,9 @@ pointers[1].addEventListener("click", function() {
 pointers[2].addEventListener("click", function() {
   animatedScroll('.about-wrap');
 })
+pointers[3].addEventListener("click", function() {
+  animatedScroll('.price-wrap');
+})
 
 /*
 ================================= Parallax =============================

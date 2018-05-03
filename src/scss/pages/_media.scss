@@ -19,13 +19,24 @@
   .description-mobile {
     display: none;
   }
+
+  // Price page
+
+  .price-wrap {
+    padding-left: 10vw !important;
+    padding-right: 20vw !important;
+
+    .col-1 {
+      padding-left: 150px !important;
+    }
+  }
 }
 
 /*
 ===================================== Medium Devices =========================================
 */
 
-@media only screen and (max-width:$desktopmax) and (min-width: 737px) {
+@media only screen and (min-width: 737px) and (max-width:$desktopmax) {
 
   // Home page
 
@@ -257,6 +268,16 @@
 
   .description-mobile {
     display: none;
+  }
+
+  // Price page
+
+  .price-wrap {
+    padding: 0 62px;
+
+    .col-1 {
+      padding-left: 0;
+    }
   }
 }
 
@@ -499,5 +520,51 @@
     font-size: 15px;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
+  }
+
+  // Price page
+
+  .price-wrap {
+    padding: 20px 42px;
+    display: block;
+
+    .col-1,
+    .col-2 {
+      width: 100%;
+      height: auto;
+    }
+
+    .col-1 {
+      padding-right: 0;
+      padding-left: 0;
+      margin-bottom: 2vh;
+
+      .ph {
+        display: none;
+      }
+    }
+
+    .col-2 {
+      padding-left: 0;
+    }
+
+    .s2 {
+      margin-top: 0;
+      margin-bottom: 2vh;
+    }
+
+    .s3 {
+      margin-top: 0;
+    }
+
+    .service {
+      h4 {
+        font-size: 3vw;
+      }
+
+      p {
+        font-size: 2.5vw;
+      }
+    }
   }
 }

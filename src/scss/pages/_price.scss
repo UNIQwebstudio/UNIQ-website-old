@@ -7,25 +7,22 @@
     padding-right: 20vw;
 
     .col-1 {
-        width: 62%;
-        height: 65%;
+        width: 55vw;
+        // height: 50vh;
         padding-left: 150px;
         padding-right: 3vw;
-
-        .ph {
-            width: 100%;
-            height: 7vh;
-            background-color: #ffffff;
-            opacity: 0.6;
-            border-radius: 0.7vw;
-            margin-bottom: 4.5vh;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .col-2 {
-        width: 48%;
-        height: 65%;
+        width: 45vw;
+        // height: 50vh;
         padding-left: 3vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .service {
@@ -63,16 +60,15 @@
         }
     }
 
-    .s1 {
-        width: 100%;
-        position: relative;
-    }
-
     .s2 {
-        margin-bottom: 4vh;
+        box-sizing: border-box;
+        // height: 46%;
+        margin-bottom: 2vh;
     }
 
     .s3 {
-        margin-top: 4vh;
+        box-sizing: border-box;
+        // height: 46%;
+        margin-top: 2vh;
     }
 }
