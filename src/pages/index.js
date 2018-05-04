@@ -53,7 +53,7 @@ if(deviceWidth <= 1217) {
   }
 }
 
-//=================== Projects hover animation ===========================
+//===================== Projects hover animation ===========================
 
 function addRemoveListener() {
   for(let i = 0; i < projects.length; i++) {
@@ -66,7 +66,6 @@ function addRemoveListener() {
       });
     }
     else {
-      console.log("REMOVE");
       projects[i].removeEventListener("mouseover", function(){});
       projects[i].removeEventListener("mouseleave", function(){});
     }
