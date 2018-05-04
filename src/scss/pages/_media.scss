@@ -40,17 +40,25 @@
 
   // Home page
 
-  .home {
-    h1 {
-      font-size: 8vw!important;
-      letter-spacing: 2px;
-      margin-bottom: 1vw;
+  .home-wrap {
+
+    .home {
+      h1 {
+        font-size: 8vw!important;
+        letter-spacing: 2px;
+        margin-bottom: 1vw;
+      }
+  
+      h2 {
+        font-family: 'Roboto-Light';
+        font-size: 3vw!important;
+        letter-spacing: 1px;
+      }
     }
 
-    h2 {
-      font-family: 'Roboto-Light';
-      font-size: 3vw!important;
-      letter-spacing: 1px;
+    .arr-down {
+      width: 3vw;
+      height: 3vw;
     }
   }
 
@@ -289,17 +297,25 @@
 
   // Home page
 
-  .home {
-    h1 {
-      font-size: 12vw!important;
-      letter-spacing: 2px;
-      margin-bottom: 1vw;
+  .home-wrap {
+
+    .home {
+      h1 {
+        font-size: 12vw!important;
+        letter-spacing: 2px;
+        margin-bottom: 1vw;
+      }
+  
+      h2 {
+        font-family: 'Roboto-Light';
+        font-size: 4vw!important;
+        letter-spacing: 1px;
+      }
     }
 
-    h2 {
-      font-family: 'Roboto-Light';
-      font-size: 4vw!important;
-      letter-spacing: 1px;
+    .arr-down {
+      width: 4vw;
+      height: 4vw;
     }
   }
 

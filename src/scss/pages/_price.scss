@@ -5,6 +5,7 @@
     align-items: center;
     padding-left: 10vw;
     padding-right: 20vw;
+    position: relative;
 
     .col-1 {
         width: 55vw;
@@ -32,6 +33,8 @@
         padding-right: 3vw;
         padding-left: 3vw;
         border-radius: 0.7vw;
+        transition: .5s;
+        cursor: pointer;
 
         h4 {
             font-family: 'Roboto-Bold';

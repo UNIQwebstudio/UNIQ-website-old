@@ -40,5 +40,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 3;
+    animation: arrowAnimation 1.2s ease infinite alternate;
+  }
+}
+
+@keyframes arrowAnimation{
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(20%);
   }
 }
