@@ -5,10 +5,10 @@ var relaxParallax = require('rellax');
 
 const deviceWidth = screen.width;
 const homeHeight = document.getElementsByClassName('home-wrap')[0].scrollHeight;
-const projects = document.getElementsByClassName('project');
-const pointers = document.getElementsByClassName('point');
-const mobileSide = document.querySelector('.side-inner-mobile');
 const side = document.querySelector('.side');
+const projects = document.getElementsByClassName('project');
+const mobileSide = document.querySelector('.side-inner-mobile');
+const pointers = document.getElementsByClassName('point');
 const sectionDetail = document.querySelector('.section-detail');
 const sectionInner = document.querySelector('.section-detail h3');
 const currentNavPosition = document.querySelector('.dott');
@@ -26,6 +26,8 @@ if(window.pageYOffset >= homeHeight-200) {
   currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
 }
 
+addRemoveListener();
+
 /*
 ============================ Sidebar/mobile sidebar =============================
 */
@@ -39,6 +41,8 @@ window.onresize = function() {
     side.style.display = "flex";
     mobileSide.style.display = "none";
   }
+
+  addRemoveListener();
 }
 
 //==================== Mobile projects animation direction changed ===============
@@ -51,13 +55,22 @@ if(deviceWidth <= 1217) {
 
 //=================== Projects hover animation ===========================
 
-for(let i = 0; i < projects.length; i++) {
-  projects[i].addEventListener("mouseover", function() {
-    slideUp(i);
-  });
-  projects[i].addEventListener("mouseleave", function() {
-    slideDown(i);
-  });
+function addRemoveListener() {
+  for(let i = 0; i < projects.length; i++) {
+    if(screen.width > 1216) {
+      projects[i].addEventListener("mouseover", function() {
+        slideUp(i);
+      });
+      projects[i].addEventListener("mouseleave", function() {
+        slideDown(i);
+      });
+    }
+    else {
+      console.log("REMOVE");
+      projects[i].removeEventListener("mouseover", function(){});
+      projects[i].removeEventListener("mouseleave", function(){});
+    }
+  }
 }
 
 function slideUp(target) {
