@@ -94,6 +94,19 @@
                     color: #000000;
                 }
 
+                textarea {
+                    font-family: 'Roboto-Light';
+                    border-radius: 0.7vw;
+                    outline: none;
+                    border: 0;
+                    padding: 3vh 1.5vw;
+                    font-size: 0.9vw;
+                    margin: 2vh 0;
+                    color: #000000;
+                    height: 15vh;
+                    resize: none;
+                }
+
                 button {
                     margin: 2vh 0;
                     font-family: 'Roboto-Bold';
@@ -103,6 +116,7 @@
                     border: 0;
                     border-radius: 0.7vw;
                     font-size: 1.3vw;
+                    cursor: pointer;
                 }
             }
         }
