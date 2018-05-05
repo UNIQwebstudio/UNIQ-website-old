@@ -357,6 +357,10 @@
         button {
           border-radius: 2vh;
         }
+
+        textarea {
+          border-radius: 2vh;
+        }
       }
     }
   }
@@ -757,6 +761,11 @@
           }
 
           button {
+            border-radius: 2vh;
+            font-size: 4vw;
+          }
+
+          textarea {
             border-radius: 2vh;
             font-size: 4vw;
           }
