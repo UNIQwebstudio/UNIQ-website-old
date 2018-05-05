@@ -44,9 +44,9 @@
         }
 
         p {
-            color: #ffffff;
-            font-size: 1vw;
-            font-family: 'Roboto-Light';
+            color: #793235;
+            font-size: 1.3vw;
+            font-family: 'Roboto-Bold';
             margin-bottom: 1vh;
         }
 
@@ -56,22 +56,29 @@
 
             .list-item {
                 margin-bottom: 1vh;
-                height: 7.5vh;
                 background-color: #9B3E47;
                 border-radius: 0.7vw;
+                padding-top: 2.5vh;
+                padding-bottom: 1.8vh;
+                padding-left: 1.3vw;
+                padding-right: 1.3vw;
+
+                .item {
+                    font-family: 'Roboto-Light';
+                    color: #ffffff;
+                    font-size: 1vw;
+                }
             }
         }
     }
 
     .s2 {
         box-sizing: border-box;
-        // height: 46%;
         margin-bottom: 2vh;
     }
 
     .s3 {
         box-sizing: border-box;
-        // height: 46%;
         margin-top: 2vh;
     }
 }

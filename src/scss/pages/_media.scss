@@ -14,6 +14,12 @@
     display: none;
   }
 
+  // Projects page
+
+  .mobile-projects-desc {
+    display: none;
+  }
+
   // About page
 
   .description-mobile {
@@ -81,6 +87,11 @@
     .row-1 {
       flex-wrap: wrap;
 
+      .project {
+        margin: 1.5vh;
+        border-radius: 2vh;
+      }
+
       .p1 {
         width: 100%;
         transform: translateX(500%);
@@ -110,6 +121,11 @@
 
     .row-2 {
       flex-wrap: wrap;
+
+      .project {
+        margin: 1.5vh;
+        border-radius: 2vh;
+      }
 
       .p3 {
         width: 100%;
@@ -286,6 +302,12 @@
     .col-1 {
       padding-left: 0;
     }
+
+    .list-item {
+      .item {
+        font-size: 1.35vw!important;
+      }
+    }
   }
 }
 
@@ -338,6 +360,11 @@
     .row-1 {
       flex-wrap: wrap;
 
+      .project {
+        margin: 1.5vh;
+        border-radius: 2vh;
+      }
+
       .p1 {
         width: 100%;
         transform: translateX(500%);
@@ -367,6 +394,11 @@
 
     .row-2 {
       flex-wrap: wrap;
+
+      .project {
+        margin: 1.5vh;
+        border-radius: 2vh;
+      }
 
       .p3 {
         width: 100%;
@@ -542,7 +574,9 @@
 
   .price-wrap {
     padding: 20px 42px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .col-1,
     .col-2 {
@@ -580,6 +614,12 @@
 
       p {
         font-size: 2.5vw;
+      }
+
+      .list-item {
+        .item {
+          font-size: 1.5vh!important;
+        }
       }
     }
   }
