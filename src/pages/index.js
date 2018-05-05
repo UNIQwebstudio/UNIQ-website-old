@@ -215,6 +215,7 @@ window.onscroll = function() {
   if(window.pageYOffset >= (homeHeight - 300)){
     for(let i = 1; i <= projects.length; i++){
       document.querySelector('.p'+i).style.transform = "translateX(0)";
+      document.querySelector('.p'+i).style.transitionDelay = "0s";
     }
   }
 
@@ -279,6 +280,9 @@ pointers[2].addEventListener("click", function() {
 })
 pointers[3].addEventListener("click", function() {
   animatedScroll('.price-wrap');
+})
+pointers[4].addEventListener("click", function() {
+  animatedScroll('.contact-wrap');
 })
 
 /*
