@@ -20,11 +20,7 @@ const currentNavPosition = document.querySelector('.dott');
 sectionDetail.style.top = "-115px";
 sectionInner.innerHTML = "Home";
 
-if(window.pageYOffset >= homeHeight-200) {
-  sectionDetail.style.transform = "translateY(85px)";
-  sectionInner.innerHTML = "Projects";
-  currentNavPosition.style.transform = "translateY(84px) rotate(-45deg)";
-}
+activeSlidePointer();
 
 addRemoveListener();
 
@@ -222,11 +218,19 @@ window.onscroll = function() {
     }
   }
 
-  //================== Active slide pointer animtion ==========================
+  activeSlidePointer();
 
+}
+
+//================== Active slide pointer animtion ==========================
+
+function activeSlidePointer() {
   let aboutHeight = document.querySelector('.about-wrap').scrollHeight;
   let coord = homeHeight*2;
   coord+=aboutHeight;
+
+  let contactHeight = document.querySelector('.contact-wrap').scrollHeight;
+  let coord2 = coord + contactHeight;
 
   if(window.pageYOffset < homeHeight-300) {
     sectionDetail.style.transform = "translateY(0px)";
@@ -243,10 +247,15 @@ window.onscroll = function() {
     sectionInner.textContent = "About";
     currentNavPosition.style.transform = "translateY(168px) rotate(-45deg)";
   }
-  else if(pageYOffset >= coord-300) {
+  else if(pageYOffset >= coord - 300 && pageYOffset < coord2 - 300) {
     sectionDetail.style.transform = "translateY(252px)";
     sectionInner.textContent = "Price";
     currentNavPosition.style.transform = "translateY(252px) rotate(-45deg)";
+  }
+  else if(pageYOffset >= coord2 - 300) {
+    sectionDetail.style.transform = "translateY(336px)";
+    sectionInner.textContent = "Contact";
+    currentNavPosition.style.transform = "translateY(336px) rotate(-45deg)";
   }
 }
 
