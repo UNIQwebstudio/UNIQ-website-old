@@ -177,6 +177,7 @@
     }
 
     &__c-companies {
+      border-radius: 2vh;
       width: 100%;
       padding: 55px 45px;
     }
@@ -184,6 +185,7 @@
     &__company {
       flex-basis: 48%;
       height: 100px;
+      border-radius: 2vh;
 
       &--mb_1 {
         margin-bottom: 0;
@@ -212,6 +214,7 @@
     }
 
     &__c-designers {
+      border-radius: 2vh;
       flex-basis: 24%;
       padding: 30px 0;
       background-color: #1D1E2E;
@@ -238,6 +241,7 @@
     }
 
     &__c-developers {
+      border-radius: 2vh;
       position: relative;
       &::before {
         position: absolute;
@@ -259,6 +263,7 @@
     }
     
     &__c-managment {
+      border-radius: 2vh;
       flex-basis: 65%;
       position: relative;
 
@@ -306,6 +311,52 @@
     .list-item {
       .item {
         font-size: 1.35vw!important;
+      }
+    }
+
+    .service {
+      border-radius: 2vh;
+    }
+  }
+
+  // Contact page
+
+  .contact-wrap {
+    padding: 0 62px;
+    padding-bottom: 3vh;
+
+    .col-1 {
+      padding-left: 0;
+
+      .social-wrap {
+        border-radius: 2vh;
+
+        .social-item {
+          border-radius: 2vh;
+        }
+      }
+
+      .mp-wrap {
+        border-radius: 2vh;
+
+        .mp-item {
+          border-radius: 2vh;
+        }
+      }
+    }
+
+    .col-2 {
+      .contact-form {
+        border-radius: 2vh;
+        padding-bottom: 2vh;
+
+        input {
+          border-radius: 2vh;
+        }
+
+        button {
+          border-radius: 2vh;
+        }
       }
     }
   }
@@ -466,11 +517,13 @@
     &__c-companies {
       width: 100%;
       padding: 25px 25px;
+      border-radius: 2vh;
     }
 
     &__company {
       flex-basis: 48%;
       height: 100px;
+      border-radius: 2vh;
 
       &--mb_1 {
         margin-bottom: 0;
@@ -506,6 +559,7 @@
       align-items: center;
       justify-content: center;
       margin: 2vw 0;
+      border-radius: 2vh;
     }
 
     &__designer-name {
@@ -519,6 +573,7 @@
     &__c-developers {
       flex-basis: 100%;
       margin: 2vw 0;
+      border-radius: 2vh;
     }
 
     &__developers-flex {
@@ -539,6 +594,7 @@
       display: flex;
       justify-content: space-around;
       margin-top: 2vw;
+      border-radius: 2vh;
     }
 
     &__managment {
@@ -608,6 +664,8 @@
     }
 
     .service {
+      border-radius: 2vh;
+
       h4 {
         font-size: 3vw;
       }
@@ -617,8 +675,91 @@
       }
 
       .list-item {
+        border-radius: 1vh!important;
         .item {
           font-size: 1.5vh!important;
+        }
+      }
+    }
+  }
+
+  // Contact page
+
+  .contact-wrap {
+    padding: 20px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .col-1 {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+      margin-bottom: 3vh;
+
+      h2 {
+        font-size: 7vw;
+      }
+
+      h4 {
+        font-size: 3vw;
+      }
+
+      .social-wrap {
+        padding: 2vh 1vw;
+        width: 100%;
+        margin-bottom: 3vh;
+        border-radius: 2vh;
+
+        .social-item {
+          padding: 8vw;
+          margin: 2vw;
+          border-radius: 2vh;
+        }
+      }
+
+      .mp-wrap {
+        padding: 2vh 1vw;
+        border-radius: 2vh;
+
+        .mp-item {
+          padding: 5vw;
+          margin: 4vw;
+          border-radius: 2vh;
+        }
+      }
+    }
+
+    .col-2 {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+
+      .contact-form {
+        padding: 3vh 2.5vw;
+        width: 100%;
+        padding-bottom: 1.5vh;
+        border-radius: 2vh;
+
+        h4 {
+          text-align: center;
+          font-size: 3.5vw;
+          margin-bottom: 1vh;
+        }
+
+        .input-wrap {
+          border-radius: 2vh;
+
+          input {
+            padding: 2vh 4vw;
+            font-size: 2.3vw;
+            border-radius: 2vh;
+          }
+
+          button {
+            border-radius: 2vh;
+            font-size: 4vw;
+          }
         }
       }
     }
