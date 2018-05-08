@@ -1,6 +1,6 @@
 .contact-wrap {
     background-color: $primaryColor;
-    padding-left: 10vw;
+    padding-left: 2vw;
     padding-right: 20vw;
     padding-bottom: 3vh;
     display: flex;
@@ -32,15 +32,15 @@
 
         .social-wrap {
             background-color: #1D1E2E;
-            padding: 3vh 3.5vw;
+            padding: 2.5vh;
             border-radius: 0.7vw;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             margin-bottom: 5vh;
 
             .social-item {
                 background-color: #171724;
-                padding: 3vw 3vw;
+                padding: 2.9vw;
                 margin: 0.5vw;
                 border-radius: 0.7vw;
             }
@@ -48,14 +48,17 @@
 
         .mp-wrap {
             background-color: #1D1E2E;
-            padding: 3vh 3.5vw;
+            padding: 3.5vh;
             border-radius: 0.7vw;
 
             .mp-item {
                 background-color: #171724;
                 padding: 1.7vw 1.7vw;
                 border-radius: 0.7vw;
-                margin: 0.5vw;
+               // margin: 0.5vw;
+            }
+            .mp-item:nth-child(1) {
+                margin-bottom: 3.5vh;
             }
         }
     }
@@ -84,7 +87,7 @@
                 justify-content: center;
 
                 input {
-                    font-family: 'Roboto-Light';
+                    font-family: 'Roboto-Regular';
                     border-radius: 0.7vw;
                     outline: none;
                     border: 0;
@@ -92,10 +95,11 @@
                     font-size: 0.9vw;
                     margin: 2vh 0;
                     color: #000000;
+                    background-color: #EAEAEA;
                 }
 
                 textarea {
-                    font-family: 'Roboto-Light';
+                    font-family: 'Roboto-Regular';
                     border-radius: 0.7vw;
                     outline: none;
                     border: 0;
@@ -105,6 +109,7 @@
                     color: #000000;
                     height: 15vh;
                     resize: none;
+                    background-color: #EAEAEA;
                 }
 
                 button {
