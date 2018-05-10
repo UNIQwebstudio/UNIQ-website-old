@@ -4,22 +4,18 @@
     padding-right: 20vw;
     padding-bottom: 3vh;
     display: flex;
-    // align-items: center;
 
     .col-1 {
         padding-left: 150px;
         padding-right: 3vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 45vw;
-        // padding-top: 2vh;
-        // padding-bottom: 2vh;
 
         h2 {
             color: #C25656;
             font-family: 'Roboto-Bold';
-            font-size: 5vw;
+            font-size: 4vw;
             margin-bottom: 3vh;
         }
 
@@ -32,33 +28,58 @@
 
         .social-wrap {
             background-color: #1D1E2E;
-            padding: 2.5vh;
-            border-radius: 0.7vw;
+            padding: 1.2vw;
+            border-radius: 0.4vw;
             display: flex;
             justify-content: space-between;
             margin-bottom: 5vh;
 
             .social-item {
                 background-color: #171724;
-                padding: 2.9vw;
+                padding: 1vw;
                 margin: 0.5vw;
-                border-radius: 0.7vw;
+                border-radius: 0.4vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .si {
+                    background-color: #ffffff;
+                    width: 3vw;
+                    height: 3vw;
+                    border-radius: 50%;
+                    background-position: center center;
+                    background-size: 60%;
+                    background-repeat: no-repeat; 
+                }
+
+                .si1 {
+                    background-image: url('../../assets/images/twitter.svg');
+                }
+
+                .si2 {
+                    background-image: url('../../assets/images/instagram.svg');
+                }
+
+                .si3 {
+                    background-image: url('../../assets/images/facebook.svg');
+                }
             }
         }
 
         .mp-wrap {
             background-color: #1D1E2E;
-            padding: 3.5vh;
-            border-radius: 0.7vw;
+            padding: 1.6vw;
+            border-radius: 0.4vw;
 
             .mp-item {
                 background-color: #171724;
                 padding: 1.7vw 1.7vw;
-                border-radius: 0.7vw;
-               // margin: 0.5vw;
+                border-radius: 0.4vw;
             }
             .mp-item:nth-child(1) {
-                margin-bottom: 3.5vh;
+                margin-bottom: 1.5vw;
             }
         }
     }
@@ -67,18 +88,19 @@
         padding-left: 3vw;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         width: 45vw;
 
         .contact-form {
             background-color: #A24C50;
-            padding: 5.5vh 2.5vw;
-            border-radius: 0.7vw;
+            padding: 2vw 2vw;
+            border-radius: 0.4vw;
 
             h4 {
                 font-family: 'Roboto-Bold';
                 color: #793235;
                 font-size: 1.5vw;
-                margin-bottom: 3vh;
+                margin-bottom: 1vw;
             }
 
             .input-wrap {
@@ -88,39 +110,40 @@
 
                 input {
                     font-family: 'Roboto-Regular';
-                    border-radius: 0.7vw;
+                    border-radius: 0.4vw;
                     outline: none;
                     border: 0;
-                    padding: 3vh 1.5vw;
+                    padding: 1.2vw 1.2vw;
                     font-size: 0.9vw;
-                    margin: 2vh 0;
+                    margin: 1vw 0;
                     color: #000000;
                     background-color: #EAEAEA;
                 }
 
                 textarea {
                     font-family: 'Roboto-Regular';
-                    border-radius: 0.7vw;
+                    border-radius: 0.4vw;
                     outline: none;
                     border: 0;
-                    padding: 3vh 1.5vw;
+                    padding: 1.2vw 1.2vw;
                     font-size: 0.9vw;
-                    margin: 2vh 0;
+                    margin: 1vw 0;
                     color: #000000;
-                    height: 15vh;
+                    height: 10vw;
                     resize: none;
                     background-color: #EAEAEA;
                 }
 
                 button {
-                    margin: 2vh 0;
+                    text-transform: uppercase;
+                    margin: 1vw 0;
                     font-family: 'Roboto-Bold';
                     background-color: #83383C;
-                    padding: 2.5vh 1.5vw;
+                    padding: 1.2vw 1.2vw;
                     outline: none;
                     border: 0;
-                    border-radius: 0.7vw;
-                    font-size: 1.3vw;
+                    border-radius: 0.4vw;
+                    font-size: 1.5vw;
                     cursor: pointer;
                 }
             }

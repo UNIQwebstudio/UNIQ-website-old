@@ -86,7 +86,7 @@
 
       .project {
         margin: 1.5vh;
-        border-radius: 2vh;
+        border-radius: 1vh;
       }
 
       .p1 {
@@ -121,7 +121,7 @@
 
       .project {
         margin: 1.5vh;
-        border-radius: 2vh;
+        border-radius: 1vh;
       }
 
       .p3 {
@@ -182,7 +182,7 @@
     &__company {
       flex-basis: 48%;
       height: 100px;
-      border-radius: 2vh;
+      border-radius: 1vh;
 
       &--mb_1 {
         margin-bottom: 0;
@@ -211,7 +211,7 @@
     }
 
     &__c-designers {
-      border-radius: 2vh;
+      border-radius: 1vh;
       flex-basis: 24%;
       padding: 30px 0;
       background-color: #1D1E2E;
@@ -238,7 +238,7 @@
     }
 
     &__c-developers {
-      border-radius: 2vh;
+      border-radius: 1vh;
       position: relative;
       &::before {
         position: absolute;
@@ -260,7 +260,7 @@
     }
     
     &__c-managment {
-      border-radius: 2vh;
+      border-radius: 1vh;
       flex-basis: 65%;
       position: relative;
 
@@ -312,7 +312,7 @@
     }
 
     .service {
-      border-radius: 2vh;
+      border-radius: 1vh;
     }
   }
 
@@ -326,37 +326,37 @@
       padding-left: 0;
 
       .social-wrap {
-        border-radius: 2vh;
+        border-radius: 1vh;
 
         .social-item {
-          border-radius: 2vh;
+          border-radius: 1vh;
         }
       }
 
       .mp-wrap {
-        border-radius: 2vh;
+        border-radius: 1vh;
 
         .mp-item {
-          border-radius: 2vh;
+          border-radius: 1vh;
         }
       }
     }
 
     .col-2 {
       .contact-form {
-        border-radius: 2vh;
+        border-radius: 1vh;
         padding-bottom: 2vh;
 
         input {
-          border-radius: 2vh;
+          border-radius: 1vh;
         }
 
         button {
-          border-radius: 2vh;
+          border-radius: 1vh;
         }
 
         textarea {
-          border-radius: 2vh;
+          border-radius: 1vh;
         }
       }
     }
@@ -414,7 +414,7 @@
 
       .project {
         margin: 1.5vh;
-        border-radius: 2vh;
+        border-radius: 1vh;
       }
 
       .p1 {
@@ -449,7 +449,7 @@
 
       .project {
         margin: 1.5vh;
-        border-radius: 2vh;
+        border-radius: 1vh;
       }
 
       .p3 {
@@ -518,19 +518,20 @@
     &__c-companies {
       width: 100%;
       padding: 25px 25px;
-      border-radius: 2vh;
+      border-radius: 1vh;
     }
 
     &__company {
       flex-basis: 48%;
       height: 100px;
-      border-radius: 2vh;
+      border-radius: 1vh;
 
       &--mb_1 {
         margin-bottom: 0;
 
         &-mobile {
-          margin-bottom: 2vw;
+          margin-bottom: 1vh;
+          border-radius: 1vh;
         }
       }
     }
@@ -560,7 +561,7 @@
       align-items: center;
       justify-content: center;
       margin: 2vw 0;
-      border-radius: 2vh;
+      border-radius: 1vh;
     }
 
     &__designer-name {
@@ -574,7 +575,7 @@
     &__c-developers {
       flex-basis: 100%;
       margin: 2vw 0;
-      border-radius: 2vh;
+      border-radius: 1vh;
     }
 
     &__developers-flex {
@@ -595,7 +596,7 @@
       display: flex;
       justify-content: space-around;
       margin-top: 2vw;
-      border-radius: 2vh;
+      border-radius: 1vh;
     }
 
     &__managment {
@@ -665,7 +666,7 @@
     }
 
     .service {
-      border-radius: 2vh;
+      border-radius: 1vh;
 
       h4 {
         font-size: 3vw;
@@ -710,23 +711,28 @@
         padding: 2vh 1vw;
         width: 100%;
         margin-bottom: 3vh;
-        border-radius: 2vh;
+        border-radius: 1vh;
+        justify-content: space-around;
 
         .social-item {
-          padding: 8vw;
           margin: 2vw;
-          border-radius: 2vh;
+          border-radius: 1vh;
+
+          .si {
+            height: 5vh;
+            width: 5vh;
+          }
         }
       }
 
       .mp-wrap {
         padding: 2vh 1vw;
-        border-radius: 2vh;
+        border-radius: 1vh;
 
         .mp-item {
           padding: 5vw;
           margin: 4vw;
-          border-radius: 2vh;
+          border-radius: 1vh;
         }
       }
     }
@@ -740,32 +746,36 @@
         padding: 3vh 2.5vw;
         width: 100%;
         padding-bottom: 1.5vh;
-        border-radius: 2vh;
+        border-radius: 1vh;
 
         h4 {
           text-align: center;
-          font-size: 3.5vw;
-          margin-bottom: 1vh;
+          font-size: 3.3vw;
+          margin-bottom: 1.5vh;
         }
 
         .input-wrap {
-          border-radius: 2vh;
+          border-radius: 1vh;
 
           input {
             padding: 2vh 4vw;
             font-size: 2.3vw;
-            border-radius: 2vh;
+            border-radius: 1vh;
+            margin-bottom: 1.5vh;
           }
 
           button {
-            border-radius: 2vh;
+            margin-top: 1vh;
+            border-radius: 1vh;
             font-size: 4vw;
+            padding: 1vh;
           }
 
           textarea {
-            border-radius: 2vh;
-            padding: 2vh 4vw;
+            border-radius: 1vh;
+            padding: 1.5vh 4vw;
             font-size: 2.3vw;
+            margin-bottom: 1.5vh;
           }
         }
       }
