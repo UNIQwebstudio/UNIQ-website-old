@@ -285,6 +285,10 @@ pointers[4].addEventListener("click", function() {
   animatedScroll('.contact-wrap');
 })
 
+document.querySelector('.arr-down').addEventListener("click", function() {
+  animatedScroll('.projects-wrap');
+})
+
 /*
 ================================= Parallax =============================
 */

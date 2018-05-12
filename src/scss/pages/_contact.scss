@@ -16,14 +16,14 @@
             color: #C25656;
             font-family: 'Roboto-Bold';
             font-size: 4vw;
-            margin-bottom: 3vh;
+            margin-bottom: 1vw;
         }
 
         h4 {
             color: #fff;
             font-family: 'Roboto-Bold';
             font-size: 2vw;
-            margin-bottom: 3vh;
+            margin-bottom: 1.5vw;
         }
 
         .social-wrap {
@@ -32,11 +32,11 @@
             border-radius: 0.4vw;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 5vh;
+            margin-bottom: 1vw;
 
             .social-item {
                 background-color: #171724;
-                padding: 1vw;
+                padding: 0.8vw;
                 margin: 0.5vw;
                 border-radius: 0.4vw;
                 display: flex;
@@ -75,8 +75,32 @@
 
             .mp-item {
                 background-color: #171724;
-                padding: 1.7vw 1.7vw;
+                padding: 1.5vw 1.5vw;
                 border-radius: 0.4vw;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    font-family: "Roboto-Regular";
+                    display: inline-block;
+                    font-size: 1vw;
+                }
+
+                .mail {
+                    background-image: url("../../assets/images/envelope.svg");
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .phone {
+                    background-image: url("../../assets/images/mobile.svg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    width: 30px;
+                    height: 30px;
+                }
             }
             .mp-item:nth-child(1) {
                 margin-bottom: 1.5vw;

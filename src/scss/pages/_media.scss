@@ -303,6 +303,10 @@
 
     .col-1 {
       padding-left: 0;
+
+      .placeholder {
+        border-radius: 1vh;
+      }
     }
 
     .list-item {
@@ -647,8 +651,10 @@
       padding-left: 0;
       margin-bottom: 2vh;
 
-      .ph {
-        display: none;
+      .placeholder {
+        height: 3vh;
+        border-radius: 1vh;
+        margin-bottom: 2vh;
       }
     }
 
@@ -701,16 +707,18 @@
 
       h2 {
         font-size: 7vw;
+        margin-bottom: 1vh;
       }
 
       h4 {
         font-size: 3vw;
+        margin-bottom: 1.5vh;
       }
 
       .social-wrap {
         padding: 2vh 1vw;
         width: 100%;
-        margin-bottom: 3vh;
+        margin-bottom: 2vh;
         border-radius: 1vh;
         justify-content: space-around;
 
@@ -733,6 +741,10 @@
           padding: 5vw;
           margin: 4vw;
           border-radius: 1vh;
+
+          p {
+            font-size: 3vw;
+          }
         }
       }
     }
