@@ -17,15 +17,15 @@ html(lang='en')
         div.section-detail
           h3 Section description
         .point-wrap(id = "first")
-          a.point.scroll
+          a.point.scroll.ptr1
         .point-wrap
-          a.point.scroll
+          a.point.scroll.ptr2
         .point-wrap
-          a.point.scoll
+          a.point.scoll.ptr3
         .point-wrap
-          a.point.scroll
+          a.point.scroll.ptr4
         .point-wrap
-          a.point.scroll(href="#")
+          a.point.scroll.ptr5(href="#")
       div.languages
         a RU
         a EN
@@ -74,7 +74,7 @@ html(lang='en')
           br  
           | the team
       div.about-wrap__s-block
-        h2.about-wrap__experience-title In over 10 years
+        h2.about-wrap__experience-title In over 5 years
         h4.about-wrap__experience-subtitle We have experience working with
         ul.about-wrap__c-companies
           li.about-wrap__company.about-wrap__company--mb_1.about-wrap__company--mb_1-mobile
@@ -147,29 +147,35 @@ html(lang='en')
     div.price-wrap(id="price")
       div.col-1
         div.placeholder
-        div.service.s1
-          h4 Corporate websites
-          p From 2000$
-          ul.list-wrap
-            li.list-item
-              p.item 10-20 individual pages
-            li.list-item
-              p.item Showcase your company and your products
-            li.list-item
-              p.item Adaptive design for all devices
+        div.service-wrap.s1
+          div.service
+            h4 Corporate websites
+            p From 2000$
+            ul.list-wrap
+              li.list-item
+                p.item 10-20 individual pages
+              li.list-item
+                p.item Showcase your company and your products
+              li.list-item
+                p.item Adaptive design for all devices
+          div.service-quick-action.sqa1
       div.col-2
-        div.service.s2
-          h4 Landing page
-          p From 800$
-          ul.list-wrap
-            li.list-item
-              p.item 10-20 individual pages
-        div.service.s3
-          h4 Wow sites
-          p From 4000$
-          ul.list-wrap
-            li.list-item
-              p.item Award winning interactive art that is beyond reality
+        div.service-wrap.s2
+          div.service
+            h4 Landing page
+            p From 800$
+            ul.list-wrap
+              li.list-item
+                p.item 10-20 individual pages
+          div.service-quick-action.sqa1
+        div.service-wrap.s3
+          div.service
+            h4 Wow sites
+            p From 4000$
+            ul.list-wrap
+              li.list-item
+                p.item Award winning interactive art that is beyond reality
+          div.service-quick-action.sqa1
     div.contact-wrap(id="contact")
       div.col-1
         h2 Get in touch

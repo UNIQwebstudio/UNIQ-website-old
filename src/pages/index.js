@@ -20,6 +20,13 @@ const currentNavPosition = document.querySelector('.dott');
 sectionDetail.style.top = "-115px";
 sectionInner.innerHTML = "Home";
 
+// Still have question
+
+window.onunload = function() {
+  console.log("Unload");
+  window.scrollTo(0,0);
+}
+
 activeSlidePointer();
 
 addRemoveListener();
@@ -288,55 +295,6 @@ pointers[4].addEventListener("click", function() {
 document.querySelector('.arr-down').addEventListener("click", function() {
   animatedScroll('.projects-wrap');
 })
-
-/*
-================================= Parallax =============================
-*/
-
-// var parallax = new relaxParallax('.home-wrap', {
-//   speed: -5,
-//   center: false,
-//   vertical: true,
-//   horizontal: false
-// })
-
-// window.addEventListener('load', function () {
-
-//   var O = document.querySelector('.home'),
-//       X = 0,
-//       Y = 0,mouseX=0,mouseY=0;
-//   document.querySelector('.home-wrap').addEventListener('mousemove', function (ev) {
-//       ev = window.event || ev;
-//       X=ev.pageX;
-//       Y=ev.pageY;
-//   });
-
-//   function move() {
-//       var p = 'px';
-//       console.log(X,Y);
-//       O.style.left = X + p;
-//       O.style.top = Y + p;
-      
-//       setTimeout(move, 10);
-//   }
-//   move();
-
-// });
-
-/*
-================================= Home background animation ===========================================
-*/
-
-// document.querySelector('.home-wrap').addEventListener("mousemove", function() {
-//   console.log("X: " + event.clientX + " Y: " + event.clientY);
-//   document.querySelector(".layer-2").style.transform = "translate3d("+ event.clientY - homeHeight + 100 +"px, 0px, 0px";
-// })
-
-/*
-================================= Meet the team animation =========================
-*/
-
-
 
 /*
 ================================= Mobile sidebar ========================================
